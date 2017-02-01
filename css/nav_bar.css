@@ -1,0 +1,90 @@
+/* NAVBAR STYLES */
+.nav_bar{
+	margin: auto;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	background-image: url(../images/starry_sky.jpg);
+	box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
+	z-index: 5000;
+}
+
+/* NAVBAR LOGO STYLES */
+.wrapper_logo {
+	float: left;
+}
+#logo_nav {
+	width: 75px;
+	height: 75px;
+	background-image: url(../images/logo_AK_white_75x75.png);
+	background-repeat: no-repeat;
+	clear: right;
+	float: left;
+	margin: 13px 25px 0px 30px;
+}
+#box1{
+	width: 15px;
+	height: 15px;
+	background-color: rgb(0, 144, 255);
+	margin: 17px 15px 9px 130px;
+}
+#box2{
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	margin: 5px 15px 9px 130px;
+}
+#box3{
+	width: 14px;
+	height: 14px;
+	background-color: black;
+	border: 1px solid white;
+	margin: 5px 15px 9px 130px;
+}
+/* NAVBAR LIST STYLES */
+.nav_bar nav {
+	float: right;
+	margin-right: 2%;
+	margin-top: 40px;
+
+}
+
+/*@media screen and (max-width: 860px) {
+    .nav_bar nav{
+        padding-bottom: 35px;
+
+    }*/
+
+.nav_bar ul {
+	list-style: none;
+}
+.nav_bar li {
+	display: inline-block;
+	float: left;
+	color: white;
+	background-color: ;
+	padding-right: 18px;
+	font-size: 18px;
+}
+/* NAVBAR LINK STYLES */
+a {
+	text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    background-color: rgb(0,144,255);
+}
+a:active {
+    text-decoration: none;
+}
+.blue{
+	color: rgb(0, 144, 255);
+	padding-left: 5px;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt-repos": "^0.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
