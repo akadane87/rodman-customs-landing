@@ -143,7 +143,7 @@ footer {
     border-right: solid 1px rgb(0, 144, 255);
     padding: 0px 23px 0px 35px;
     float: left;
-    margin: 13px 0px 0px 27px;
+    /* margin: 13px 0px 0px 27px; */
 }
   #footer_icon_body {
       /* margin: 28px auto 0; */
@@ -179,15 +179,25 @@ footer {
 }
 
 @media (max-width: 560px) {
-.footer_wrapper_logo {
+  .footer_wrapper_logo {
     float: none;
     /* clear: both; */
-    border: red solid 1px;
+    /* border: red solid 1px; */
     /* margin-top: 10px; */
     overflow: auto;
-    margin: 10px 7%;
-    /* width: 360px; */
-  }
+    margin: 10px 2%;
+    width: 360px;
+}
+
+    #logo_footer {
+      width: 75px;
+      height: 75px;
+      background-image: url(../images/logo_AK_white_75x75.png);
+      background-repeat: no-repeat;
+      margin: 13px 0px 0px 4px;
+      float: left;
+      /* clear: right; */
+    }
 }
 
 /*/////// FOOTER LINK SYLES ////////*/
