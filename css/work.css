@@ -7,16 +7,52 @@
 	padding-top: 150px;
 }
 
-.project1 {
+.project {
 	width: 300px;
-	height: 250px;
+	height: 215px;
 	margin: 2%;
 	background-color: black;
 	border: solid rgb(0,144,255);
 	float: left;
 }
 
-.hvr-grow {
+.project1 {
+	background-image: url(../images/thumbs/wmw_350x250.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.project2 {
+	background-image: url(../images/thumbs/guessthatdev_350x250.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.project3 {
+	background-image: url(../images/thumbs/tictacbro.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.project4 {
+	background-image: url(../images/thumbs/nutrisavings_350x250.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.project5 {
+	background-image: url(../images/thumbs/spd_350x250.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.project6 {
+	background-image: url(../images/thumbs/photo_350x250.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+/*.hvr-grow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -24,13 +60,13 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;*/
   /**** how long it takes to grow *****/
-  -webkit-transition-duration: 0.3s;
+  /*-webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
-}
+}*/
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
  /*** how large it grows ***/
   -webkit-transform: scale(1.1);
