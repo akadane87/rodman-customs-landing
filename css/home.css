@@ -9,6 +9,21 @@
     top: 86vh;
 }
 
+.icon-grid {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid cyan;
+    overflow: auto;
+    /* text-align: center; */
+}
+
+.skills-icon {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
 @media (max-width: 1025px) {
 	#about {
     width: 100%;
@@ -52,11 +67,16 @@
 	padding-bottom: 20px;
 	padding-top: 22px;
 }
-#wrapper_body_about{
-	width: 1050px;
-	margin:auto;
-	padding-top: 45px;
+#wrapper_body_about {
+    width: 70%;
+    margin: auto;
+    padding-top: 45px;
+    /* clear: right; */
+    /* display: block; */
+    overflow: auto;
+    /* border: 1px yellow solid; */
 }
+
 #wrapper_about_left{
 	width: 475px;
 }
@@ -72,6 +92,7 @@
 	color: white;
 	line-height: 190%;
 	float: left;
+  text-align: center;
 }
 .bacon {
 	position: relative;

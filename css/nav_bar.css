@@ -42,7 +42,7 @@
 	margin: 5px 15px 9px 130px;
 }
 /* NAVBAR LIST STYLES */
-.nav_bar nav {
+.nav_bar .nav {
 	float: right;
 	margin-right: 2%;
 	margin-top: 40px;
