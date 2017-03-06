@@ -67,21 +67,21 @@
 	font-size: 18px;
 }
 /* NAVBAR LINK STYLES */
-a {
+.nav_bar a {
 	text-decoration: none;
 }
-a:link {
+.nav_bar a:link {
     text-decoration: none;
     color: white;
 }
-a:visited {
+.nav_bar a:visited {
     text-decoration: none;
     color: white;
 }
-a:hover {
+.nav_bar a:hover {
     background-color: rgb(0,144,255);
 }
-a:active {
+.nav_bar a:active {
     text-decoration: none;
 }
 .blue{

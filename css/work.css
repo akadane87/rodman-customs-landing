@@ -1,165 +1,239 @@
-/* WORK PAGE STYLES */
-
-.project_container{
-	width: 75%;
-	height: 100%;
-	margin: auto;
-	padding-top: 150px;
+.work-tree {
+    background-image: url(../images/Bonsai1_BW_1200x922.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .3;
+    position: absolute;
+    top: 345px;
+    left: -200px;
+    height: 800px;
+    width: 980px;
+    z-index: -1;
 }
 
-.project {
-	width: 300px;
-	height: 215px;
-	margin: 2%;
-	background-color: black;
-	border: solid rgb(0,144,255);
-	float: left;
-}
-
-.project1 {
-	background-image: url(../images/thumbs/wmw_350x250.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.project2 {
-	background-image: url(../images/thumbs/guessthatdev_350x250.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.project3 {
-	background-image: url(../images/thumbs/tictacbro.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.project4 {
-	background-image: url(../images/thumbs/nutrisavings_350x250.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.project5 {
-	background-image: url(../images/thumbs/spd_350x250.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.project6 {
-	background-image: url(../images/thumbs/photo_350x250.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-/*.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;*/
-  /**** how long it takes to grow *****/
-  /*-webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}*/
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
- /*** how large it grows ***/
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-a {
-	text-decoration: none;
-}
-
-a:link {
-    text-decoration: none;
-    color: white;
-}
-
-a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    background-color: rgba(0,144,255);
-}
-
-a:active {
-    text-decoration: none;
-}
-
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  /**** how long it takes to grow *****/
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
- /*** how large it grows ***/
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-
-
-.project_main {
-	width: 100%;
-/*	height: 2650px;*/
-	background-image: url(../images/starry_sky.jpg);
-	position: relative;
-	top: 680px;
-}
-
-.project_wrapper {
-    margin: 30% auto;
-    height: auto;
-    width: 60%;
-}
-
-.thumbnail{
-	height: auto;
-    width: 100%;
+.project_container {
+    background-color: rgba(211, 211, 211, .3);
+    width: 80%;
+    /* height: 400px; */
     margin: 0 auto;
+    padding-top: 160px;
+    overflow: auto;
+    animation-name: slide;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: .3s;
+    animation-duration: 0.6s;
 }
 
-.thumbnail img {
-	width: 100%;
+@keyframes slide {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.thumbnail-pic1{
-	    background-image: url(../images/BussinesCard_320x372.jpg);
+.project-link {
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    height: 250px;
+    width: 350px;
+    /*border: 1px solid yellow;*/
 }
 
-/*/////// MOBILE MEDIA QUERIES ///////*/
-
-@media screen and (max-width: 700px) {
-	.project_wrapper{
-		width: 80%;
-
-	}
-
+.project-thumb {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: blue;
+    width: 350px;
+    height: 250px;
+    transition: 11s transform linear;
 }
 
-@media screen and (max-width: 500px) {
-	.project_wrapper{
-		width: 100%;
+.project-roll-over {
+    background-color: rgba(2, 0, 2, 0.70);
+    width: 350px;
+    height: 250px;
+    position: relative;
+    /* top: -250px; */
+    top: 0;
+    transition: .4s;
+}
 
-	}
+.project-title {
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    position: absolute;
+}
 
+span.plus {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    color: cyan;
+    top: 85px;
+}
+
+.personal-branding{
+		background-image: url(../Thumbs/AK3D_300x250.jpg);
+}
+
+.wmw {
+  background-image: url(../images/thumbs/wmw_350x250.jpg);
+}
+
+.guess-that-dev {
+  background-image: url(../images/thumbs/guessthatdev_350x250.jpg);
+}
+
+.tic-tac-bro {
+  background-image: url(../images/thumbs/tictacbro.jpg);
+}
+
+.nutrisavings {
+  background-image: url(../images/thumbs/nutrisavings_350x250.jpg);
+}
+
+.spd {
+  background-image: url(../images/thumbs/spd_350x250.jpg);
+}
+
+.logo-folio {
+  background-image: url(../images/thumbs/guessthatdev_350x200.jpg);
+}
+
+.photography{
+  background-image: url(../images/thumbs/photo_350x250.jpg);
+}
+
+.milk-n-kookies{
+  background-image: url(../images/thumbs/guessthatdev_350x250.jpg);
+}
+
+.buyer{
+  background-image: url(../images/thumbs/buyer_300x250.jpg);
+}
+
+.hood{
+  background-image: url(../images/thumbs/hood_300x250.jpg);
+}
+
+.carbonite{
+  background-image: url(../images/thumbs/Carbonite_300x250.jpg);
+}
+
+.lsco{
+  background-image: url(../images/thumbs/guessthatdev_350x250.jpg);
+}
+
+.chamber-pg{
+  background-image: url(../images/thumbs/guessthatdev_350x250.jpg);
+}
+
+.reach-out {
+  width: 100%;
+  background-color: rgb(0, 144, 255);
+  height: 260px;
+  text-align: center;
+}
+
+.reach-out:before {
+    content: "";
+    /* border: 1px solid yellow; */
+    display: block;
+    height: 300px;
+    width: 610px;
+    background-image: url(../images/mario_900x600.png);
+    position: absolute;
+    right: 0px;
+    /* top: 0; */
+    background-clip: content-box;
+    mix-blend-mode: screen;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -60px;
+    opacity: .4;
+}
+
+.reach-out > p {
+  z-index: 1;
+}
+
+.reach-out .reach-out-title {
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: black;
+    padding-top: 30px;
+    position: relative;
+    /* margin-top: 20px; */
+}
+
+.reach-out-title:after {
+    content: "";
+    background-color: lightgray;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
+    margin: 84px auto;
+}
+
+.reach-out .reach-out-body {
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+    letter-spacing: .5px;
+    /* font-weight: 200; */
+    /* font-style: italic; */
+    margin-top: 45px;
+}
+
+.reach-out a {
+    display: block;
+    margin: 40px auto;
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.reach-out span {
+    display: block;
+    /* margin: 20px auto; */
+    color: white;
+    padding-top: 15px;
+}
+
+
+a.project-link:hover {
+	background-color: yellow;
+}
+a.project-link:hover .project-thumb{
+  -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+}
+a.project-link:hover .project-roll-over{
+top: -250px;
 }
