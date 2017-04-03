@@ -206,6 +206,10 @@
 }
 
 @media (max-width: 560px) {
+  .footer {
+    height: 270px;
+    top: 380px;
+}
   .footer_wrapper_logo {
     float: none;
     /* clear: both; */

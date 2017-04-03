@@ -1,4 +1,8 @@
-
+.main-wrapper{
+  position: relative;
+  bottom: 0px;
+  /*border: 1px solid yellow;*/
+}
 
 /* ABOUT SECTION STYLES*/
 #about {
@@ -47,11 +51,34 @@
 @media (max-width: 630px) {
 	#about {
     width: 100%;
-    height: 760px;
+    height: 1000px;
     background-image: url(../images/starry_sky.jpg);
     position: relative;
     top: 67vh;
 	}
+}
+
+@media (max-width: 375px) {
+  #about {
+  top: 69vh;
+  }
+  #wrapper_body_about {
+    width: 83%;
+    margin: auto;
+    padding-top: 45px;
+    /* clear: right; */
+    /* display: block; */
+    overflow: auto;
+    /* border: 1px yellow solid; */
+}
+.body_about {
+    font-size: 16pt;
+    font-weight: 300;
+    color: white;
+    line-height: 190%;
+    float: left;
+    text-align: center;
+  }
 }
 
 #wrapper_title_about{
@@ -68,7 +95,7 @@
 	padding-top: 22px;
 }
 #wrapper_body_about {
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding-top: 45px;
     /* clear: right; */
@@ -87,7 +114,7 @@
 	border-left: solid 4px rgb(0, 144, 255);
 }
 .body_about{
-	font-size: 20pt;
+	font-size: 18pt;
 	font-weight: 300;
 	color: white;
 	line-height: 190%;
@@ -146,10 +173,18 @@
     top: 330px;
     padding: 18px 97px;
     /* border: 0px solid rgb(0, 144, 255); */
-    border-radius: 8px;
+    /* border-radius: 8px; */
     margin-left: 40%;
     z-index: 1;
     /* vertical-align: middle; */
+}
+
+.work_button span {
+    display: inline-block;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 19px;
+    color: rgb(0, 144, 255);
 }
 
 #work_background{
@@ -209,7 +244,7 @@
     padding-top: 50px;
     margin-left: 32%;
     transform: skewY(0deg);
-}
+  }
     #tree {
       width: 632px;
       height: 770px;
@@ -217,24 +252,65 @@
       /* position: fixed; */
       top: 205px;
       left: -244px;
-    }
+  }
     .work_button {
+      display: block;
+      /* width: 200px; */
+      height: 40px;
+      font-size: 20px;
+      background-color: black;
+      color: #0090ff;
+      transform: skewY(4deg);
+      /* text-align: center; */
+      position: absolute;
+      top: 330px;
+      padding: 12px 90px;
+      border: 0px solid rgb(0, 144, 255);
+      border-radius: 0;
+      margin-left: 20%;
+      z-index: 1;
+  }
+  .work_button span {
+    display: inline-block;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 23px;
+    color: rgb(0, 144, 255);
+  }
+}
+
+@media (max-width: 500px){
+  #work {
+      width: 100%;
+      height: 815px;
+      transform: skewY(-4deg);
+      position: relative;
+      top: 420px;
+  }
+  .work_button {
     display: block;
     /* width: 200px; */
     height: 40px;
     font-size: 20px;
-    background-color: rgb(0, 144, 255);
-    color: black;
+    background-color: black;
+    color: #0090ff;
     transform: skewY(4deg);
     /* text-align: center; */
     position: absolute;
     top: 330px;
     padding: 12px 90px;
     border: 0px solid rgb(0, 144, 255);
-    border-radius: 8px;
-    margin-left: 61px;
+    border-radius: 0;
+    margin-left: 44px;
     z-index: 1;
-  }
+}
+.work_button span {
+  display: inline-block;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 23px;
+  color: rgb(0, 144, 255);
+}
 }
 
 /*/////////// CONTACT SECTION STYLES /////////*/
@@ -304,11 +380,12 @@
 
 @media (max-width: 660px) {
 	#contact {
-		height: 1270px;
+    height: 1280px;
+    top: 390px;
 	}
   #wrapper_title_contact {
     width: 150px;
-    margin-left: 29%;
+    margin: 0 auto;
     border-bottom: solid 1px white;
     transform: skewY(-4deg);
     padding-top: 30px;
@@ -435,6 +512,49 @@
     font-size: 13pt;
 }
 
+@media (max-width: 500px) {
+  #wrapper_body_contact {
+    margin: 0px 5%;
+    overflow: auto;
+    padding: 65px 0px 0px 0px;
+    transform: skewY(-4deg);
+    /* border: 1px solid pink; */
+  }
+  #contact_info {
+    width: 100%;
+    height: 310px;
+  }
+  #info_title_wrapper {
+    padding: 14px 24px 8px 24px;
+  }
+  #info_title_wrapper h1 {
+    margin: auto;
+    width: 22%;
+    color: white;
+    font-size: 24pt;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 2px solid rgb(0,144,255);
+    padding-bottom: 14px;
+}
+  .icon_body_container_left{
+    float: initial;
+    margin-left: 35px;
+    width: 80%;
+  }
+  .icon_wrapper{
+    margin-top: 3px;
+  }
+  .icon_wrapper{
+    margin-left: 3px
+  }
+  .info_description {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 6px 0 11px 10px;
+  }
+}
 
 /*/////// START CONTACT FORM /////////*/
 
@@ -462,6 +582,7 @@
 	    width: 100%;
 			margin-right: 0;
 			padding: 10px 0;
+      overflow: hidden;
 	    /* position: relative; */
 	}
 }
@@ -515,7 +636,8 @@ input {
 	border-color: black;
 	/*width: 100%;*/
 	cursor: pointer;
-	/*-webkit-appearance: none;*/
+  font-family: Oswald;
+  font-size: 18px;
 }
 
 @media (max-width: 660px) {
