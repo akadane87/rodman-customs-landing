@@ -152,6 +152,11 @@
 }
 
 /*////// MOBILE FOOTER STYLES //////*/
+@media (max-width: 1024px) {
+  .footer {
+    top: 380px;
+	}
+}
 @media (max-width: 800px) {
   .footer {
     height: 270px;
