@@ -153,7 +153,7 @@
 
 /*////// MOBILE FOOTER STYLES //////*/
 @media (max-width: 800px) {
-  footer {
+  .footer {
     height: 270px;
 	}
   .footer_wrapper_logo {
@@ -188,7 +188,7 @@
 }
 .back_to_top {
     font-size: 20px;
-    height: 20px;
+    height: 28px;
     /* bottom: 54px; */
     position: initial;
     /* right: 2%; */
@@ -212,7 +212,7 @@
     /* border: red solid 1px; */
     /* margin-top: 10px; */
     overflow: auto;
-    margin: 10px 2%;
+    margin: 10px auto;
     width: 360px;
 }
 
