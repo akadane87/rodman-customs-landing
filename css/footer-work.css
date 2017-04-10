@@ -8,7 +8,6 @@
     /* min-height: 115px; */
     position: relative;
     /*top: 440px;*/
-    bottom: 0px;
     background-image: url(../images/starry_sky.jpg);
     box-shadow: 0px -10px 8px rgba(0, 0, 0, 0.5);
     z-index: 2;
@@ -153,8 +152,13 @@
 }
 
 /*////// MOBILE FOOTER STYLES //////*/
+@media (max-width: 1024px) {
+  .footer {
+    /*top: 380px;*/
+	}
+}
 @media (max-width: 800px) {
-  footer {
+  .footer {
     height: 270px;
 	}
   .footer_wrapper_logo {
@@ -189,7 +193,7 @@
 }
 .back_to_top {
     font-size: 20px;
-    height: 20px;
+    height: 28px;
     /* bottom: 54px; */
     position: initial;
     /* right: 2%; */
@@ -207,13 +211,17 @@
 }
 
 @media (max-width: 560px) {
+  .footer {
+    height: 270px;
+    /*top: 350px;*/
+}
   .footer_wrapper_logo {
     float: none;
     /* clear: both; */
     /* border: red solid 1px; */
     /* margin-top: 10px; */
     overflow: auto;
-    margin: 10px 2%;
+    margin: 10px auto;
     width: 360px;
 }
 
@@ -230,20 +238,20 @@
 
 /*/////// FOOTER LINK SYLES ////////*/
 
-.footer a {
+a {
 	text-decoration: none;
 }
-.footer a:link {
+a:link {
     text-decoration: none;
     color: white;
 }
-.footer a:visited {
+a:visited {
     text-decoration: none;
     color: white;
 }
-.footer a:hover {
+a:hover {
     background-color: rgba(0,144,255);
 }
-.footer a:active {
+a:active {
     text-decoration: none;
 }

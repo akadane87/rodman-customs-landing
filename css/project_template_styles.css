@@ -119,7 +119,7 @@
 
 .project-description {
     /*border: 1px solid cyan;*/
-    background-color: white;
+    /*background-color: white;*/
     height: 430px;
     width: 350px;
 }
@@ -323,13 +323,12 @@
     background-color: black;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
     z-index: 1;
 }
 
 .reach-out span {
     display: block;
-    /* margin: 20px auto; */
+    font-size: 17px;
     color: white;
     padding-top: 15px;
 }
@@ -450,13 +449,33 @@
   }
 }
 
-@media (max-width: 460px) {
-  .project-description:before{
-  height: 390px;
+@media (max-width: 715px) {
+  .brand-header-content-wrapper {
+    width: 565px;
+    margin: 20px auto;
+    }
+    .brand-header-content-wrapper h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+  }
+  .brand-header-content-wrapper .header-icon-wrapper div {
+    width: 120px;
+    /* height: 100px; */
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 6px;
+    /* border: 1px solid palegoldenrod; */
+}
+  .brand-header-content-wrapper .header-icon-wrapper div img {
+      width: 80px;
+      height: 80px;
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 510px) {
   .brand-header-content-wrapper {
     /* border: solid 1px gold; */
     width: 360px;
@@ -485,6 +504,7 @@
     color: white;
     font-size: 13px;
     margin-top: 16px;
+    width: 100px;
   }
   .brand-header-content-wrapper .header-icon-wrapper p:after {
     content: '';
@@ -527,10 +547,10 @@
       content: '';
       position: absolute;
       top: 0;
-      left: 0;
+      left: 4%;
       right: 0;
       bottom: 0;
-      width: 352px;
+      width: 90%;
       height: 410px;
       border: 3px solid black;
       background-color: rgb(255, 255, 255);
@@ -578,23 +598,23 @@
   }
   .skills-pos-right, .skills-pos-left {
     position: absolute;
+    width: 100%;
     /* display: none; */
-    left: 75px;
+    left: initial;
     right: initial;
     top: -25px;
+    margin: 0 auto;
     /* border: 1px solid darkred; */
+    text-align: center;
     transform: rotate(5deg);
-  }
-  /*.skills-icon-wrapper {
-
-  }*/
-  .project-description .skills-icon-wrapper img {
-    display: block;
+}
+.skills-icon-wrapper img {
+    display: inline-block;
     width: 50px;
     height: 50px;
-    float: left;
-     margin-bottom: 0;
-  }
+    float: initial;
+    margin-bottom: 0;
+}
   .project-description a {
     display: block;
     height: 40px;
@@ -605,5 +625,13 @@
     top: 105px;
     margin: 0 auto;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .project-description:before {
+    height: 410px;
+    width: 94%;
+    left: 2%;
   }
 }

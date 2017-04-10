@@ -213,7 +213,7 @@
 @media (max-width: 560px) {
   .footer {
     height: 270px;
-    top: 380px;
+    top: 350px;
 }
   .footer_wrapper_logo {
     float: none;
