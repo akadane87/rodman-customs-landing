@@ -1,20 +1,5 @@
-body{
-  background-image: url(../images/starry_sky.jpg);
-}
-
-/*.brand-header:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 460;
-}*/
-
 .brand-header {
-    background-color: rgba(0, 144, 255, 0.6);
+    background-color: pink;
     width: 100%;
     height: 460px;
     padding-top: 100px;
@@ -31,18 +16,14 @@ body{
     margin-bottom: 36px;
     color: white;
     text-align: center;
-    position: relative;
-    z-index: 2;
 }
 
 .brand-header-content-wrapper .header-icon-wrapper {
-    /* overflow: auto; */
-    /* border: 1px solid cyan; */
+    /*overflow: auto;*/
+    /*border: 1px solid cyan;*/
     /* width: 500px; */
     /* height: 400px; */
     text-align: center;
-    position: relative;
-    z-index: 2;
 }
 
 /*.brand-header-content-wrapper div img {
@@ -107,15 +88,13 @@ body{
 
 .project-module-wrapper{ /*//// wraps individual projects (desctiptions are absolute postitioned to this) /////*/
   width: 100%;
-  border: 0px solid purple;
+  border: 1px solid purple;
   position: relative;
   overflow: hidden; /*/// NEW ////*/
-  background-color: white;
-  margin-bottom: 50px;
 }
 
 .project-module {
-    border: 0px solid red;
+    border: 1px solid red;
     /* position: relative;     description module is postioned to the outer wrapper not the photo of project */
     width: 70%;
     height: 575px;
@@ -249,7 +228,7 @@ body{
 .skills-pos-left {
     position: absolute;
     top: 20%;
-    right: -28px;
+    right: -24px;
 }
 
 .project-description .skills-icon-wrapper img {
@@ -383,12 +362,10 @@ body{
 @media (max-width: 800px) {
   .project-module-wrapper {
     width: 100%;
-    height: 1000px;
-    border: 0px solid purple;
+    border: 1px solid purple;
     position: relative;
-    background: rgba(255, 255, 255, 0);
-    /* margin-bottom: 300px; */
-}
+    /*margin-bottom: 300px;*/
+  }
   .tree-left {
     position: absolute;
     left: -250px;
@@ -396,29 +373,15 @@ body{
     bottom: initial;
     height: 500px;
     width: 670px;
-    z-index: 1;
     opacity: .5;
 }
-  .tree-right {
-    position: absolute;
-    right: -250px;
-    top: 20px;
-    bottom: initial;
-    height: 500px;
-    width: 670px;
-    z-index: 1;
-    opacity: .5;
-}
-.project-module {
-    border: 0px solid red;
+  .project-module {
+    border: 1px solid red;
     position: relative;
     width: 100%;
-    height: 620px;
-    overflow: visible;
-    background-color: white;
-    /* z-index: 10; */
-    /* margin-bottom: 300px; */
-}
+    height: 665px;
+    margin-bottom: 300px;
+  }
   .right, .left {
     position: relative;
     top: 415px;
@@ -427,22 +390,21 @@ body{
     /* bottom: 0; */
 }
   .project-description {
-    /* border: 1px solid cyan; */
-    /* background-color: white; */
-    height: 430px;
-    width: 100%;
-    z-index: 3;
-}
+      /*border: 1px solid cyan;*/
+      /* background-color: white; */
+      height: 430px;
+      width: inherit;
+  }
   .project-description:before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 2%;
     right: 0;
     bottom: 0;
-    width: 98.5%;
+    width: 95%;
     height: 360px;
-    border: 5px solid black;
+    border: 3px solid black;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 30px 6px rgba(13, 13, 13, .5);
     -ms-transform: skew(4deg);
@@ -592,17 +554,17 @@ body{
   }
   .project-module-wrapper {
     width: 100%;
-    border: 0px solid purple;
+    border: 1px solid purple;
     position: relative;
     /*margin-bottom: 300px;*/
   }
   .project-module {
-    border: 0px solid red;
+    border: 1px solid red;
     position: relative;
     width: 100%;
-    height: 580px;
+    height: 665px;
     margin-bottom: 300px;
-}
+  }
   .right, .left {
     position: relative;
     top: 415px;
@@ -617,21 +579,21 @@ body{
       width: inherit;
   }
   .project-description:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: initial;
-    height: 410px;
-    border: 5px solid black;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 4px 30px 6px rgba(13, 13, 13, .5);
-    -ms-transform: skew(4deg);
-    -webkit-transform: skew(4deg);
-    transform: skewY(4deg);
-}
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 4%;
+      right: 0;
+      bottom: 0;
+      width: 90%;
+      height: 410px;
+      border: 3px solid black;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 4px 30px 6px rgba(13, 13, 13, .5);
+      -ms-transform: skew(4deg);
+      -webkit-transform: skew(4deg);
+      transform: skewY(4deg);
+  }
   .project-description h1 {
       text-align: center;
       font-size: 25px;
@@ -704,7 +666,7 @@ body{
 @media (max-width: 460px) {
   .project-description:before {
     height: 410px;
-    width: 97.4%;
-    left: 0;
-}
+    width: 94%;
+    left: 2%;
+  }
 }

@@ -1,0 +1,894 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<title>Launch</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,400' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+						/* Resets: see reset.css for details */
+						.ReadMsgBody { width: 100%; background-color: #ffffff;}
+						.ExternalClass {width: 100%; background-color: #ffffff;}
+						.ExternalClass, .ExternalClass p, .ExternalClass span,
+						.ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+						#outlook a{ padding:0;}
+						body{width: 100%; height: 100%; background-color: #ffffff; margin:0; padding:0;}
+						body{ -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+						html{width:100%;}
+						table {mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}
+						table td {border-collapse:collapse;}
+						table p{margin:0;}
+						br, strong br, b br, em br, i br { line-height:100%; }
+						div, p, a, li, td { -webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+						h1, h2, h3, h4, h5, h6 { line-height: 100% !important; -webkit-font-smoothing: antialiased; }
+						span a { text-decoration: none !important;}
+						a{ text-decoration: none !important; }
+						ul{list-style: none; margin:0; padding:0;}
+						img{height: auto !important; line-height: 100%; outline: none; text-decoration: none; display:block !important; -ms-interpolation-mode:bicubic;}
+						.yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited,
+						.yshortcuts a:hover, .yshortcuts a span { text-decoration: none !important; border-bottom: none !important;}
+						/*mailChimp class*/
+						.default-edit-image{
+							height:20px;
+						}
+						.tpl-repeatblock {
+							padding: 0px !important;
+							border: 0px dotted rgba(0,0,0,0);
+						}
+						@media only screen and (max-width: 640px){
+							/* mobile setting */
+							table[class="container"]{width:100%!important; max-width:100%!important; min-width:100%!important;
+								padding-left:20px!important; padding-right:20px!important; text-align: center!important; clear: both;}
+							td[class="container"]{width:100%!important; padding-left:0px!important; padding-right:0px!important; clear: both;}
+							table[class="full-width"]{width:100%!important; max-width:100%!important; min-width:100%!important; clear: both;}
+							table[class="full-width-center"] {width: 100%!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+							table[class="auto-center"] {width: auto!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+							*[class="auto-center-all"]{width: auto!important; max-width:75%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+							*[class="auto-center-all"] * {width: auto!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+							table[class="col-3"]{width:30.35%!important; max-width:100%!important;}
+							table[class="col-2"]{width:47%!important; max-width:100%!important;}
+							/* image */
+							td[class="image-full-width"] img{width:100% !important; height:auto !important; max-width:100% !important;}
+							/* helper */
+							table[class="space-w-20"]{width:3.5%!important; max-width:20px!important; min-width:3.5% !important;}
+							table[class="space-w-25"]{width:4.4%!important; max-width:25px!important; min-width:4.4% !important;}
+							*[class="h-20"]{height:20px;}
+							*[class="h-30"]{height:30px;}
+							*[class="h-40"]{height:40px;}
+							*[class="remove-640"]{display:none !important;}
+						}
+						@media only screen and (max-width: 479px){
+							/* mobile setting */
+							table[class="container"]{width:100%!important; max-width:100%!important; min-width:124px!important;
+								padding-left:0px!important; padding-right:0px!important; text-align: center!important; clear: both;}
+							td[class="container"]{width:100%!important; padding-left:0px!important; padding-right:0px!important; text-align: center!important; clear: both;}
+							table[class="full-width"]{width:100%!important; max-width:100%!important; min-width:124px!important; clear: both;}
+							table[class="full-width-center"] {width: 100%!important; max-width:100%!important; min-width:124px!important; text-align: center!important; clear: both; margin:0 auto; float:none;}
+							*[class="auto-center-all"]{width: 100%!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+							*[class="auto-center-all"] * {width: auto!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+							table[class="col-3"]{width:100%!important; max-width:100%!important; text-align: center!important; clear: both;}
+							table[class="col-2"]{width:100%!important; max-width:100%!important; text-align: center!important; clear: both;}
+							/* image */
+							td[class="image-full-width"] img{width:100% !important; height:auto !important; max-width:100% !important; min-width:124px !important;}
+							/* halper */
+							table[class="space-w-20"]{width: 100%!important; max-width:100%!important;  min-width:100% !important;}
+							table[class="space-w-25"]{width:100%!important; max-width:100%!important; min-width:100% !important;}
+							*[class="remove-479"]{display:none !important;}
+						}
+		</style>
+	</head>
+	<body  style="font-size:12px; width:100%; height:100%;">
+		<table id="mainStructure" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#f4f3f3;">
+			<repeater>
+			<layout label='LAYOUT-1 LOGO AND MENU'>
+			<!--START LAYOUT-1 LOGO AND MENU -->
+			<tr>
+				<td align="center" valign="top" style="background-color: #ffffff;">
+					<!-- start container -->
+					<table width="600px" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width: 600px; padding-left: 20px; padding-right: 20px; background-color: #ffffff;">
+						<!-- start space -->
+						<tr>
+							<td valign="top" height="30" style="line-height: 1px; font-size: 1px;">
+							</td>
+						</tr>
+						<!-- end space -->
+						<!-- start content container-->
+						<tr>
+							<td valign="top">
+								<table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+									<tr>
+										<td valign="middle">
+											<!-- start logo -->
+											<table align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center">
+												<tr>
+													<td align="center" valign="top">
+														<a href="#" style="font-size: inherit; text-decoration: none;">
+															<img src="http://www.nutrisavings.com/wp-content/uploads/2015/05/NutriSavings_couleur_bd_188x40.png" width="auto" style="max-width:100%; display: block !important; " alt="logo" border="0" hspace="0" vspace="0" editable="" label="image-0">
+														</a>
+													</td>
+												</tr>
+											</table>
+											<!-- end logo -->
+											<!-- height space for mobile -->
+											<table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="h-30" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+												<tr>
+													<td height="1" class="h-30" style="border-collapse: collapse; line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+											</table>
+											<!-- height space for mobile -->
+											<!-- start menu -->
+											<table align="right" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+												<tr>
+													<td valign="top">
+														<table align="left" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+															<tr>
+																<td align="center" style="font-size: 14px; line-height: 32px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-0">
+																	<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit;">
+																		<!--a href="#" style="color: rgb(51, 51, 51); font-size: inherit; text-decoration: none;">Booth #4127 &nbsp;&nbsp;&nbsp;&nbsp;</a-->
+																		<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; text-decoration: none;">Booth #2349</a>
+																	</span>
+																</multiline></td>
+															</tr>
+														</table>
+														<!-- height space for mobile -->
+														<table width="20" border="0" cellpadding="0" cellspacing="0" align="right" class="h-30" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+															<tr>
+																<td height="1" class="h-30" style="border-collapse: collapse; line-height: 1px; font-size: 1px;">
+																</td>
+															</tr>
+														</table>
+														<!-- height space for mobile -->
+														<!-- start button menu-->
+														<!--table border="0" align="right" cellpadding="0" cellspacing="0" class="full-width-center">
+															<tr>
+																<td valign="top" align="center">
+																	<table width="auto" border="0" align="center" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td width="auto" align="center" valign="middle" height="32" style="border: 1px solid rgb(139, 201, 254); border-radius: 24px; font-size: 13px; line-height: 24px; font-family: 'Open Sans', Arial, Tahoma, Helvetica, sans-serif; text-align: center; color: rgb(139, 201, 254); font-weight: normal; padding-left: 18px; padding-right: 18px; word-break: break-word; background-clip: padding-box;"><multiline label="text-1">
+																				<span style="color: rgb(139, 201, 254); font-weight: normal; font-size: inherit;">
+																					<a href="#" style="color: rgb(139, 201, 254); font-weight: normal; font-size: inherit; text-decoration: none;">
+																						JOIN NOW
+																					</a>
+																				</span>
+																			</multiline></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table-->
+														<!-- button menu -->
+														<!-- end menu -->
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- end content container-->
+						<!-- start space -->
+						<tr>
+							<td valign="top" height="30" style="line-height: 1px; font-size: 1px;">
+							</td>
+						</tr>
+						<!-- end space -->
+					</table>
+					<!-- end container -->
+				</td>
+			</tr>
+			<!--END LAYOUT-1 LOGO AND MENU -->
+			</layout>
+			<layout label='LAYOUT-2 ( HEADER IMAGE )'>
+			
+			<!--START LAYOUT-2 ( HEADER IMAGE ) -->
+			<tr>
+				<td align="center" valign="top" class="container" style="">
+					<!-- start container -->
+					<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="max-width:800px; padding-left:0px; padding-right:0px;">
+						<!-- start header img -->
+						<tr> 
+							<td valign="top" height="auto" style="line-height: 1px; font-size: 1px;min-height: 400px;">
+							<img src="http://www.nutrisavings.com/wp-content/uploads/2016/06/TradeShow_emailHeader1_reminder_SHRM_900x400.jpg" alt="Visit our booth!" title="Visit our booth!" width="100%" style="max-width:900px;">
+							</td>
+						</tr>
+						<!-- end header img -->
+
+						
+					</table>
+					<!-- end container -->
+				</td>
+			</tr>
+			<!--END LAYOUT-2 ( HEADER IMAGE ) -->
+			</layout>
+			<layout label='LAYOUT-3 ( 3-COL ICON / TEXT )'>
+			
+			<!--START LAYOUT-3 ( 3-COL ICON / TEXT )  -->
+			<tr>
+				<td align="center" valign="top" class="container" style="background-color: #ffffff;">
+					<!-- start container -->
+					<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width:600px;  padding-left:20px; padding-right:20px; background-color:#ffffff;">
+						<!-- start space -->
+						<tr>
+							<td valign="top" height="40" style="line-height: 1px; font-size: 1px;">
+							</td>
+						</tr>
+						<!-- end space -->
+						<!-- start content container-->
+							<tr>
+								<td align="center" style="font-size: 25px; line-height: 28px; color: rgb(92, 147, 89); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word; background-color: ##f7f7f7;"><multiline label="text-16">
+														<span align="center" style="text-decoration: none; color: rgb(92, 147, 89); font-weight: normal; font-size: inherit;">
+															Hi SHRM Attendee, <br>Don't miss out!
+															<br>
+															<br>
+
+
+														</span>
+														<!-- <br>
+														<br>
+														<br> -->
+													</multiline>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-16">
+									<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit;">
+										The national chronic illness and obesity epidemics are hurting our nation’s health and driving up healthcare costs. Come join NutriSavings at booth #2349 to see how we can help your employees and their families get healthy through something simple: <br> <strong> going grocery shopping. </strong>
+										<br>
+										<br>
+										<br>
+										<br>
+									</span>
+								</multiline></td>
+							</tr>
+
+						<!-- end content container-->
+						<!-- start content container-->
+						<br>
+						<tr>
+							<td valign="top">
+								<table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+									<tr>
+										<td valign="top" align="center">
+											<!-- start col left -->
+											<table width="170" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3">
+												<tr>
+													<td align="center" valign="top">
+														<a href="#" style="font-size: inherit; text-decoration: none;">
+															<img src="http://www.nutrisavings.com/wp-content/uploads/2016/06/TradeShowEmail_icons_blender_100x100.png" width="90" style="max-width:170px; display:block!important;" alt="image-2" border="0" hspace="0" vspace="0" editable="" label="image-2">
+														</a>
+													</td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-5">
+														<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+															<a href="#" style="color: rgb(92, 147, 89); font-weight: bold; font-size: inherit; text-decoration: none;">WIN </a>
+
+														</span>
+													</multiline></td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-6">
+														<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit;">
+															Enter our raffle to win a <br> <img src="http://www.nutrisavings.com/wp-content/uploads/2016/06/vitamix-logo.svg" style="display: block; float: left; width: 90px; height: 20px; padding-right: 10px"> <p style=" display: inline-block; float: left;"> Blender</p>
+														</span>
+													</multiline></td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<!-- start button text -->
+												<tr>
+													<td valign="top">
+														<table align="center" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="font-size: 14px; line-height: 24px; font-family: 'Open Sans', Arial, Tahoma, Helvetica, sans-serif; color: rgb(68, 166, 255); font-weight: normal; text-align: center; word-break: break-word;"><multiline label="text-7">
+																	<!--span style="text-decoration: none; color: rgb(68, 166, 255); font-size: inherit;"><a href="#" style="color: rgb(68, 166, 255); font-size: inherit; text-decoration: none;">Read More</a--></span>
+																</multiline></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- end button text -->
+											</table>
+											<!-- start col left -->
+											<!--[if (gte mso 9)|(IE)]>
+										</td>
+										<td>
+											<![endif]-->
+											<!-- space width 25px -->
+											<table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-25" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+												<tr>
+													<td height="1" width="25" class="h-40" style="border-collapse: collapse; line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+											</table>
+											<!-- space width 25px -->
+											<!--[if (gte mso 9)|(IE)]>
+										</td>
+										<td>
+											<![endif]-->
+											<!-- start col center -->
+											<table width="170" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3">
+												<tr>
+													<td align="center" valign="top">
+														<a href="#" style="font-size: inherit; text-decoration: none;">
+															<img src="http://www.nutrisavings.com/wp-content/uploads/2016/06/TradeShowEmail_icons_app_100x100.png" width="90" style="max-width:170px; display:block!important;" alt="image-3" border="0" hspace="0" vspace="0" editable="" label="image-3">
+														</a>
+													</td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-8">
+														<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+															<a href="#" style="color: rgb(92, 147, 89); font-weight: bold; font-size: inherit; text-decoration: none;">CONNECT</a>
+														</span>
+													</multiline></td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-9">
+														<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit;">
+															Get a quick demo of our program
+														</span>
+													</multiline></td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<!-- start button text -->
+												<tr>
+													<td valign="top">
+														<table align="center" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="font-size: 14px; line-height: 24px; font-family: 'Open Sans', Arial, Tahoma, Helvetica, sans-serif; color: rgb(68, 166, 255); font-weight: normal; text-align: center; word-break: break-word;"><multiline label="text-10">
+																	<!--span style="text-decoration: none; color: rgb(68, 166, 255); font-size: inherit;"><a href="#" style="color: rgb(68, 166, 255); font-size: inherit; text-decoration: none;">Read More</a></span-->
+																</multiline></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- end button text -->
+											</table>
+											<!-- start col center -->
+											<!--[if (gte mso 9)|(IE)]>
+										</td>
+										<td>
+											<![endif]-->
+											<!-- space width 25px -->
+											<table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-25" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+												<tr>
+													<td height="1" width="25" class="h-40" style="border-collapse: collapse; line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+											</table>
+											<!-- space width 25px -->
+											<!--[if (gte mso 9)|(IE)]>
+										</td>
+										<td>
+											<![endif]-->
+											<!-- start col right -->
+											<table width="170" align="right" border="0" cellpadding="0" cellspacing="0" class="col-3">
+												<tr>
+													<td align="center" valign="top">
+														<a href="#" style="font-size: inherit; text-decoration: none;">
+															<img src="http://www.nutrisavings.com/wp-content/uploads/2016/06/TradeShowEmail_icons_bottle_100x100.png" width="90" style="max-width: 170px; display: block !important;" alt="image-4" border="0" hspace="0" vspace="0" editable="" label="image-4">
+														</a>
+													</td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-11">
+														<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+															<a href="#" style="color: rgb(92, 147, 89); font-weight: bold; font-size: inherit; text-decoration: none;">TAKE HOME</a>
+														</span>
+													</multiline></td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-12">
+														<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit;">
+															Lots of cool giveaways, and a FREE blender bottle!
+														</span>
+													</multiline></td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<!-- start button text -->
+												<tr>
+													<td valign="top">
+														<table align="center" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td style="font-size: 14px; line-height: 24px; font-family: 'Open Sans', Arial, Tahoma, Helvetica, sans-serif; color: rgb(68, 166, 255); font-weight: normal; text-align: center; word-break: break-word;"><multiline label="text-13">
+																	<!--span style="text-decoration: none; color: rgb(68, 166, 255); font-size: inherit;"><a href="#" style="color: rgb(68, 166, 255); font-size: inherit; text-decoration: none;">Read More</a></span-->
+																</multiline></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- end button text -->
+											</table>
+											<!-- start col right -->
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- end content container-->
+						<!-- start space -->
+						<tr>
+							<td valign="top" height="40" style="line-height: 1px; font-size: 1px;">
+							</td>
+						</tr>
+						<!-- end space -->
+					</table>
+					<!-- end container -->
+				</td>
+			</tr>
+			<!--END LAYOUT-3 ( 3-COL ICON / TEXT )   -->
+			</layout>
+			<layout label='LAYOUT-4 TITLE AND CONTENT'>
+			
+			<!--START LAYOUT-4 TITLE AND CONTENT  -->
+			<tr>
+				<td align="center" valign="top" class="container" style="background-color: #f7f7f7;">
+					<!-- start container -->
+					<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#f7f7f7; min-width:600px;  padding-left:20px; padding-right:20px;">
+						<!-- start space -->
+						<tr>
+							<td valign="top" height="40" style="line-height: 1px; font-size: 1px;">
+							</td>
+						</tr>
+						<!-- end space -->
+						<!-- start content container-->
+						<tr>
+							<td valign="top">
+								<table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+									<tr>
+										<td valign="top">
+											<!-- start content -->
+											<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+												<tr>
+													<td align="center" style="font-size: 24px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-14">
+														<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+															<a href="#" style="color: rgb(92, 147, 89); font-weight: bold; font-size: inherit; text-decoration: none;">
+																WHAT IS NUTRISAVINGS?
+															</a>
+														</span>
+													</multiline></td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="10" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-15">
+														<!--span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: normal; font-size: inherit;">
+															JOIN AND SHARE
+														</span-->
+													</multiline></td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-16">
+														<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit;">
+															With NutriSavings, your employees and their families are rewarded for something they already do: going grocery shopping. Through digital nutrition education and cash rewards for purchasing healthy food, you can empower your employees to make healthier choices for better lives. 
+															<br>
+															<br> See how healthy choices can transform a workforce:
+															<br>
+															<br>
+															<!-- <span style="text-decoration: none; color: rgb(250, 162, 33); font-weight: bold; font-size: 16px;">
+															<a href="#" style="color: rgb(250, 162, 33); font-weight: bold; font-size: inherit; text-decoration: none;">
+																LEARN MORE >>
+															</a>
+														</span>
+															<br>
+													</multiline></td> -->
+												</tr>
+
+						
+					<!-- IMAGE -->
+					<table width="400" align="center" border="0" cellspacing="0">
+						<tr>
+							<td align="center">
+								<a href="http://www.nutrisavings.com/wp-content/uploads/dlm_uploads/2016/05/JAX-CaseStudy_NutriSavings.pdf" style="font-size: inherit; text-decoration: none;">
+									<img src="http://www.nutrisavings.com/wp-content/uploads/2016/05/downloads_QSGnutrition-jax-walmart.png" width="400" style="max-width: 170px; display: block !important;" alt="image-4" border="0" hspace="0" vspace="0" editable="" label="image-4">
+								</a>
+							</td>
+						</tr>
+					</table>
+
+
+						<tr>
+						<table align="center" width="200px" style="margin-bottom: 55px">
+						<tr>
+							<td height="40" width="200px" align="center" style="background-color: rgb(250,162,34); text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif;">
+								<span style="font-weight: bold; font-size: 16px;">
+										<a href="http://www.nutrisavings.com/shrmtoolkit/" style="color: #ffffff; font-weight: bold; font-size: inherit; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif;">
+											DOWNLOAD NOW >>
+										</a>
+								</span>
+							</td>
+						</tr>
+						</table>
+						</tr>
+						<!-- end space -->
+											</table>
+											<!-- end content -->
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- end content container-->
+						<!-- start space -->
+						<!-- <tr>
+							<td valign="top" height="40" style="line-height: 1px; font-size: 1px;">
+							</td>
+						</tr> -->
+						<!-- end space -->
+					</table>
+					<!-- end container -->
+				</td>
+			</tr>
+			
+			<!--START LAYOUT-19 ( 2-COL FOOTER )-->
+			<tr>
+				<td align="center" valign="top" class="container" style="background-color: #ffffff; border-bottom :0px solid #cdcdcd; ">
+					<!-- start container -->
+					<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px;  padding-left:20px; padding-right:20px; ">
+						<!-- start space -->
+						<tr>
+							<td valign="top" height="40" style="line-height: 1px; font-size: 1px;">
+							</td>
+						</tr>
+						<!-- end space -->
+						<!-- start content container-->
+						<tr>
+							<td valign="top">
+								<table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+									<tr>
+										<td valign="top" align="center">
+											<!-- start col left -->
+											<table width="267" align="left" border="0" cellpadding="0" cellspacing="0" class="auto-center-all">
+												<tr>
+													<td valign="top">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+															<tr>
+																<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-59">
+																	<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+																		<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; font-size: inherit; text-decoration: none;">
+																			CONTACT US
+																		</a>
+																	</span>
+																</multiline></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td valign="top">
+														<table border="0" cellspacing="0" cellpadding="0" align="left">
+															<tr>
+																<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-60">
+																	<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit;">
+																		320 Nevada St.<br>
+																		Newton, MA 02460
+																	</span>
+																</multiline></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="25" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td valign="top">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+															<tr>
+																<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-61">
+																	<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+																		<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; font-size: inherit; text-decoration: none;">
+																			FOLLOW US
+																		</a>
+																	</span>
+																</multiline></td>
+															</tr>
+															<!-- start space -->
+															<tr>
+																<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+																</td>
+															</tr>
+															<!-- end space -->
+															<!-- start social icon -->
+															<tr>
+																<td valign="top" align="left">
+																	<table border="0" align="left" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+																		<tr>
+																			<td height="20" align="center" valign="middle">
+																				<a href="https://www.facebook.com/nutrisavings" style="font-size: inherit; text-decoration: none;">
+																					<img src="http://www.nutrisavings.com/wp-content/uploads/2015/05/icon-facebook.png" width="20" alt="icon-facebook" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0" editable="" label="image-36">
+																				</a>
+																			</td>
+																			<td style="padding-left:5px;" height="20" align="center" valign="middle">
+																				<a href="https://twitter.com/nutrisavings" style="font-size: inherit; text-decoration: none;">
+																					<img src="http://www.nutrisavings.com/wp-content/uploads/2015/05/icon-twitter.png" width="20" alt="icon-twitter" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0" editable="" label="image-37">
+																				</a>
+																			</td>
+																			<!--td style="padding-left: 5px; " height="20" align="center" valign="middle">
+																				<a href="#" style="font-size: inherit; text-decoration: none;">
+																					<img src="images/icon-googleplus.png" width="20" alt="icon-googleplus" style="max-width: 20px; display: block !important; " border="0" hspace="0" vspace="0" editable="" label="image-38">
+																				</a>
+																			</td-->
+																			<td style="padding-left: 5px; " height="20" align="center" valign="middle">
+																				<a href="https://www.youtube.com/user/nutrisavings" style="font-size: inherit; text-decoration: none;">
+																					<img src="http://www.nutrisavings.com/wp-content/uploads/2015/05/icon-youtube.png" width="20" alt="icon-youtube" style="max-width: 20px; display: block !important; " border="0" hspace="0" vspace="0" editable="" label="image-39">
+																				</a>
+																			</td>
+																			<!--td style="padding-left:5px;" height="20" align="center" valign="middle">
+																				<a href="#" style="font-size: inherit; text-decoration: none;">
+																					<img src="images/icon-skype.png" width="20" alt="icon-skype" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0" editable="" label="image-40">
+																				</a>
+																			</td-->
+																			<td style="padding-left:5px;" height="20" align="center" valign="middle">
+																				<a href="https://www.linkedin.com/company/nutrisavings" style="font-size: inherit; text-decoration: none;">
+																					<img src="http://www.nutrisavings.com/wp-content/uploads/2015/05/icon-linkedin.png" width="20" alt="icon-vimeo" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0" editable="" label="image-41">
+																				</a>
+																			</td>
+																			<td style="padding-left:5px;" height="20" align="center" valign="middle">
+																				<a href="https://www.pinterest.com/NutriSavings1/" style="font-size: inherit; text-decoration: none;">
+																					<img src="http://www.nutrisavings.com/wp-content/uploads/2015/05/icon-pinterest.png" width="20" alt="icon-pinterest" style="max-width:20px; display:block !important;" border="0" hspace="0" vspace="0" editable="" label="image-42">
+																				</a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<!-- end social icon -->
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!-- start col left -->
+											<!--[if (gte mso 9)|(IE)]>
+										</td>
+										<td>
+											<![endif]-->
+											<!-- space width 25px -->
+											<table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-25" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+												<tr>
+													<td height="1" width="25" class="h-40" style="border-collapse: collapse; line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+											</table>
+											<!-- space width 25px -->
+											<!--[if (gte mso 9)|(IE)]>
+										</td>
+										<td>
+											<![endif]-->
+											<!-- start col right -->
+											<table width="267" align="right" border="0" cellpadding="0" cellspacing="0" class="auto-center-all">
+												<tr>
+													<td valign="top">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+															<tr>
+																<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-62">
+																	<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+																		<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; fonte: inherit; text-decoration: none;">
+																			SAY HELLO
+																		</a>
+																	</span>
+																</multiline></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td>
+														<table border="0" cellspacing="0" cellpadding="0" align="left">
+															<tr>
+																<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-63">
+																	<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit;">
+																		We're here to help!
+																	</span>
+																</multiline></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- start space -->
+												<tr>
+													<td valign="top" height="20" style="line-height: 1px; font-size: 1px;">
+													</td>
+												</tr>
+												<!-- end space -->
+												<tr>
+													<td valign="top">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+															<tr>
+																<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-64">
+																	<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+																		<a href="#" style="color: rgb(51, 51, 51); font-weight: bold; font-size: inherit; text-decoration: none;">
+																			PHONE :&nbsp;&nbsp;
+																			</a><span style="font-size: 14px; color: #44A6FF; font-weight:normal;">&nbsp;&nbsp;800-344-3593</span>
+																		</span>
+																	</multiline></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="15" style="line-height: 1px; font-size: 1px;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr>
+														<td valign="top">
+															<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" style="padding-top:5px; padding-bottom:5px;">
+																<tr>
+																	<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-65">
+																		<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: bold; font-size: inherit;">
+																			<a href="mailto:info@email.nutrisavings.com" style="color: rgb(51, 51, 51); font-weight: bold; font-size: inherit; text-decoration: none;">
+																				EMAIL :&nbsp;&nbsp;
+																				</a><span style="font-size: 14px; color: #44A6FF; font-weight: normal;">&nbsp;&nbsp;info@nutrisavings.com</span>
+																			</span>
+																		</multiline></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- start col right -->
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- end content container-->
+								<!-- start space -->
+								<tr>
+									<td valign="top" height="40" style="line-height: 1px; font-size: 1px;">
+									</td>
+								</tr>
+								<!-- end space -->
+							</table>
+							<!-- end container -->
+						</td>
+					</tr>
+					<!--END LAYOUT-19 ( 2-COL FOOTER )-->
+					</layout>
+					</repeater>
+					
+					<!--START LAYOUT-20 ( FOOTER ALL RIGHTS RESERVED ) -->
+					<tr>
+						<td align="center" valign="top" class="container" style="background-color:#F7F7F7;">
+							<!-- start container -->
+							<table width="560" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width:600px; background-color:#F7F7F7; padding-left:20px; padding-right:20px;">
+								<!-- start space -->
+								<tr>
+									<td valign="top" height="20" style="line-height: 1px; font-size: 1px;">
+									</td>
+								</tr>
+								<!-- end space -->
+								<tr>
+									<td valign="top">
+										<table width="560" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+											<tr>
+												<td valign="top">
+													<table align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center">
+														<!-- start rights reserved -->
+														<tr>
+															<td align="center" style="font-size: 12px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;"><multiline label="text-66">
+																<span style="color: rgb(51, 51, 51); font-size: inherit;">Copyright © 2015 NutriSavings. All rights reserved.</span>
+															</multiline></td>
+														</tr>
+														<!-- end rights reserved -->
+													</table>
+													<!-- height space for mobile -->
+													<table width="1" border="0" cellpadding="0" cellspacing="0" align="left" class="h-20" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+														<tr>
+															<td height="1" class="h-20" style="border-collapse: collapse; line-height: 1px; font-size: 1px;">
+															</td>
+														</tr>
+													</table>
+													<!-- height space for mobile -->
+													<table align="right" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+														<tr>
+															<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(68, 166, 255); font-weight: normal; text-align: center; font-family: 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;">
+																<span style="text-decoration: none; color: rgb(68, 166, 255); font-size: inherit;">
+																	<span style="text-decoration: none; color: rgb(68, 166, 255); font-size: inherit;">
+																		<!--webversion style="text-decoration: none; color: rgb(68, 166, 255);">view online</webversion-->
+																			<!--/span> &nbsp;| &nbsp;<span style="text-decoration: none; color: rgb(68, 166, 255); font-size: inherit;"-->
+																			<a href="http://nutrisavings.mkt6872.com/emailpreferences/EmailPreferences?spMailingID=22723693&spUserID=MTE1ODQ3NDUxMTEzS0&spJobID=NTYyNjY4Mzc4S0&spReportId=NTYyNjY4Mzc4S0" target="_blank"> <unsubscribe style="text-decoration: none; color: rgb(68, 166, 255);">unsubscribe</unsubscribe>
+																</span>
+															</span>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="20" style="line-height: 1px; font-size: 1px;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-20 ( FOOTER ALL RIGHTS RESERVED ) -->
+			</table></body>
+		</html>

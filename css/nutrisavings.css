@@ -1,0 +1,334 @@
+
+
+/*#NS-digital-newsletter>.project-module {
+    border: 0px solid red;
+    background-image: url(../images/nutrisavings/NS_sidexside_NewsLetter.png);
+    background-repeat: no-repeat;
+    background-size: 690px;
+    background-position-x: center;
+    background-position-y: -20px;
+}
+@media (max-width: 400px) {
+    #NS-digital-newsletter>.project-module {
+    background-size: 130%;
+    background-position-x: -50px;
+    background-position-y: 20px;
+  }
+}*/
+
+#NS-hero:before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    background-image: url(../images/nutrisavings/NS_hero_1400x600.jpg);
+    background-repeat: no-repeat;
+    background-size: 1450px;
+    background-position: center;
+}
+
+#NS-hero .brand-header-content-wrapper:before {
+    content: '';
+    position: absolute;
+    top: -270px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 105%;
+    height: 1070px;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, rgba(143,143,143,0) 55%, rgba(255,255,255,0) 98%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,rgba(143,143,143,0) 55%,rgba(255,255,255,0) 98%);
+    background: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(143,143,143,0) 55%,rgba(255,255,255,0) 98%);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#NS-digital-newsletter>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 660px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@media (max-width: 800px) {
+  #NS-digital-newsletter>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 690px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+}
+@media (max-width: 400px) {
+  #NS-digital-newsletter>.project-module>img {
+    width: 705px;
+    top: 10px;
+    margin: initial;
+    left: -60px;
+  }
+}
+
+
+#NS-newsletter-V1 img,
+#NS-newsletter-V2 img,
+#NS-tradeshow-emailer-V1 img,
+#NS-tradeshow-emailer-V2 img{
+  display: inline-block;
+}
+
+#NS-newsletter-V1 .launch-wrapper,
+#NS-newsletter-V2 .launch-wrapper,
+#NS-tradeshow-emailer-V1 .launch-wrapper,
+#NS-tradeshow-emailer-V2 .launch-wrapper {
+    position: absolute;
+    bottom: 18%;
+    text-align: center;
+    width: 100%;
+    animation: bounce 1s infinite alternate;
+    /* border: 1px solid; */
+}
+
+#NS-newsletter-V1 .launch-wrapper a.launch,
+#NS-newsletter-V2 .launch-wrapper a.launch,
+#NS-tradeshow-emailer-V1 .launch-wrapper a.launch,
+#NS-tradeshow-emailer-V2 .launch-wrapper a.launch {
+    display: inline-block;
+    text-align: center;
+    width: 230px;
+    height: 50px;
+    border: 6px solid rgba(0, 0, 0, 0.9);
+    color: #b13b3b;
+    font-size: 22px;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    opacity: 0.6;
+    transition: .3s;
+}
+
+#NS-newsletter-V1 .launch-wrapper a.launch span,
+#NS-newsletter-V2 .launch-wrapper a.launch span,
+#NS-tradeshow-emailer-V1 .launch-wrapper a.launch span,
+#NS-tradeshow-emailer-V2 .launch-wrapper a.launch span {
+    display: block;
+    margin-top: 27px;
+     color: #000000;
+    /* font-size: 27px; */
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+#NS-newsletter-V1 .launch-wrapper:hover,
+#NS-newsletter-V2 .launch-wrapper:hover,
+#NS-tradeshow-emailer-V1 .launch-wrapper:hover,
+#NS-tradeshow-emailer-V2 .launch-wrapper:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+   animation-play-state: paused;
+}
+#NS-newsletter-V1 .launch-wrapper a.launch:hover,
+#NS-newsletter-V2 .launch-wrapper a.launch:hover,
+#NS-tradeshow-emailer-V1 .launch-wrapper a.launch:hover,
+#NS-tradeshow-emailer-V2 .launch-wrapper a.launch:hover {
+  background-color: #2196F3;
+  opacity: 1;
+  transform: scale(1.2);
+  border: 6px solid black;
+  color: white;
+}
+
+#NS-newsletter-V1 .launch-wrapper a.launch:hover span,
+#NS-newsletter-V2 .launch-wrapper a.launch:hover span
+#NS-newsletter-V2 .launch-wrapper a.launch:hover span
+#NS-newsletter-V2 .launch-wrapper a.launch:hover span{
+  color: white;
+}
+/*////////     END  NS DIGITAL NEWLETTER STYLES  /////////*/
+
+
+
+#NS-case-study>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 950px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@media (max-width: 800px) {
+  #NS-case-study>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 870px;
+    top: 20px;
+    left: -60px;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+}
+@media (max-width: 400px) {
+  #NS-case-study>.project-module>img {
+    width: 805px;
+    top: 60px;
+    margin: initial;
+    left: -30px;
+  }
+}
+
+
+/*#NS-tradeshow-email>.project-module{
+  border: 0px solid red;
+  background-image: url(../images/nutrisavings/NS_sidexside_TradeShow2.png);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: center;
+}
+@media (max-width: 400px) {
+#NS-tradeshow-email>.project-module{
+    background-size: 160%;
+    background-position: -110px -20px;
+  }
+}*/
+
+#NS-tradeshow-email{margin-bottom: 0px;}
+
+#NS-tradeshow-email>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 660px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@media (max-width: 800px) {
+  #NS-tradeshow-email>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 690px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+}
+@media (max-width: 400px) {
+  #NS-tradeshow-email>.project-module>img {
+    width: 705px;
+    top: 10px;
+    margin: initial;
+    left: -60px;
+  }
+}
+
+
+.parallax-bar-1{
+  width: 100%;
+  /*background-color: cyan;*/
+  height: 300px;
+}
+.NS-parallax-background{
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/nutrisavings/NS_plaxBanner_1400x700.jpg);
+}
+
+
+/*#NS-site-campaigns>.project-module{
+  border: 0px solid red;
+  background-image: url(../images/nutrisavings/NSdesktop_Skin.png);
+  background-repeat: no-repeat;
+  background-size: 740px;
+  background-position: center;
+}
+@media (max-width: 400px) {
+#NS-site-campaigns>.project-module{
+    background-size: 160%;
+    background-position: -110px -20px;
+  }
+}*/
+
+
+#NS-site-campaigns>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 685px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+  #NS-site-campaigns>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 610px;
+    top: -40px;
+    left: -10px;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+}
+@media (max-width: 400px) {
+  #NS-site-campaigns>.project-module>img {
+    width: 575px;
+    top: 0px;
+    margin: initial;
+    left: 60px;
+  }
+}
+
+#NS-digital-ads{
+  margin-bottom: 0px;
+}
+
+
+#NS-digital-ads>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 760px;
+    left: -10px;
+    right: 0;
+    top: -30px;
+    margin: auto;
+}
+@media (max-width: 800px) {
+  #NS-digital-ads>.project-module>img {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 710px;
+    top: -40px;
+    left: -10px;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+}
+@media (max-width: 400px) {
+  #NS-digital-ads>.project-module>img {
+    width: 595px;
+    top: -10px;
+    margin: initial;
+    left: -40px;
+  }
+}
+
+
+#NS-other-assets{display: none;}
