@@ -15,21 +15,31 @@
 <!-- LOAD MAIN CSS -->
 <link href="css/main.css" rel="stylesheet" type="text/css">
 
+<!-- LOAD MOBILE CSS -->
+<link rel="stylesheet" media="(max-width: 570px)" href="css/mobile-570.css" />
 
+<link rel="icon" type="image/x-icon" href="/public/images/favicon.ico?v=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
 
 <div class="main-container">
+  <div class="height-box">
+    <p>WELCOME TO ...</p>
+    <h5> SCROLL DOWN</h5>
+    <span>></span>
+  </div>
   <!-- <div class="nav-scroll-gutter"></div> -->
   <div class="header">
+    <div class="lion-header" data-stellar-offset-parent="true">
     <img class="lion-matte" src="images/Lion_matte_660x687.png" alt="back-row" data-stellar-ratio=".2">
-    <div>
+  </div>
+    <div class="trucks" data-stellar-offset-parent="true">
       <!-- <button id="headerTOroad">Click to Start</button> -->
-    <img class="back-row" src="images/header-backrow-1400x600.png" alt="back-row" data-stellar-ratio=".2">
-    <img class="lights-front-row" src="images/header-frontrow-lightsScreen-1400x667.png" alt="back-row" data-stellar-ratio=".4">
-    <img class="front-row" src="images/header-frontrow-1400x700.png" alt="back-row" data-stellar-ratio=".4">
+    <img class="back-row" src="images/header-backrow-1400x600.png" alt="back-row" data-stellar-ratio=".2" data-stellar-vertical-offset="250">
+    <img class="lights-front-row" src="images/header-frontrow-lightsScreen-1400x667.png" alt="back-row" data-stellar-ratio=".3">
+    <img class="front-row" src="images/header-frontrow-1400x700.png" alt="back-row" data-stellar-ratio=".3">
   </div>
 </div>
 
@@ -880,6 +890,11 @@ $(window).stellar({
   horizontalScrolling:false,
   hideDistantElements: false
 });
+
+// $('.header .lion-header')animate({
+// 	marginBottom: '-70px',
+// 	width: '1200px'
+// },'slow');
 
 
 

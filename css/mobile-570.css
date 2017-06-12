@@ -8,9 +8,9 @@ a {
 
 .main-container {
   position: relative;
-  width: 1200px;
+  width: 360px;
   margin: 0 auto;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 
 }
 
@@ -24,7 +24,7 @@ a {
 
 .header {
   /*border: 1px solid yellow;*/
-  width: 1200px;
+  width: 360px;
   height: 2200px;
   margin: 0 auto;
   overflow: hidden;
@@ -34,71 +34,29 @@ a {
 }
 
 .height-box {
-    width: 1200px;
+    width: 360px;
     height: 1000px;
-    text-align: center;
     /* background-color: blue; */
     /*background-image: url(../images/welcome2.jpg);*/
     background-size: 110%;
+    background-repeat: no-repeat;
     background-position-y: -60px;
     background-position-x: -40px;
 }
 
 .height-box p:before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 300px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 240px;
-    height: 20px;
-    background-color: rgb(3, 99, 180);
-    z-index: 3;
+  content:'';
 }
 
 .height-box p {
-    position: relative;
-    font-family: 'Oswald';
-    color: white;
-    font-size: 112pt;
-    text-align: center;
-    transform: skewX(-15deg);
-    -ms-transform:skewX(-15deg);
-    -webkit-transform:skewX(-15deg);
-    top: 300px;
-}
-
-.height-box h5 {
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 20pt;
-    text-align: center;
-    transform: skewX(-15deg);
-    -ms-transform: skewX(-15deg);
-    -webkit-transform: skewX(-15deg);
-    right: 41px;
-    top: 420px;
-}
-
-.height-box span {
-    display: block;
-    position: relative;
-    font-family: 'Oswald';
-    color: white;
-    font-size: 112pt;
-    text-align: center;
-    transform: rotateZ(90deg);
-    top: 520px;
-    right: 20px;
+  position: relative;
+  font-family: 'Oswald' sans-serif;
+  color: white;
 }
 
 .header .lion-header{
   height: 1200px;
-  margin-bottom: 240px;
+  margin-bottom: 140px;
   /*margin-bottom: 530px;*/
   /*margin-bottom: -70px*/
   /*background-color: rgba(255, 192, 203, 0.2);*/
@@ -113,7 +71,7 @@ a {
 
 .back-row{
   display: block;
-  width: 1200px;
+  width: 360px;
   position: absolute;
   left: 0px;
   right: 0px;
@@ -122,6 +80,7 @@ a {
 }
 
 .lion-matte {
+  width: 260px;
   display: block;
   z-index: 0;
   position: absolute;
@@ -133,7 +92,7 @@ a {
 
 .lights-front-row{
   display: block;
-  width: 1200px;
+  width: 360px;
   position: absolute;
   top: 150px;
   left: 0px;
@@ -144,7 +103,7 @@ a {
 
 .front-row{
   display: block;
-  width: 1200px;
+  width: 360px;
   position: absolute;
   top: 140px;
   left: 0px;
@@ -155,10 +114,11 @@ a {
 /*/////////  END HEADER   ///////////*/
 
 .road-container {
-  width: 1200px;
+  width: 360px;
   height: 5400px;
   margin: 0 auto;
   background-image: url("../images/road-pavement-1200x1201.png");
+  background-size: 100%;
   position: relative;
 }
 
@@ -177,7 +137,7 @@ a {
 
 
 .car-top-shadow {
-  width: 1200px;
+  width: 360px;
   position: absolute;
   z-index: 1;
 }
@@ -189,14 +149,14 @@ a {
     background-repeat: no-repeat;
     background-image: url("../images/road-car.png");
     background-attachment: fixed;
-    width: 1200px;
+    width: 360px;
     height: 1200px;
 }
 
 /*NEED HEADLIGHTS*/
 
 .badge-container {
-  width: 1200px;
+  width: 360px;
   height: 3000PX;
   /*border: 1px solid cyan;*/
 }
@@ -211,26 +171,26 @@ a {
 }
 
 .badge-wrapper p {
-  font-family: 'Oswald';
+    font-family: 'Oswald';
     color: white;
-    font-size: 90pt;
+    font-size: 40pt;
     position: absolute;
     mix-blend-mode: soft-light;
 }
 
 .badge-wrapper img {
     /* display: block; */
-    width: 400px;
+    width: 200px;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 1px;
+    right: initial;
     margin: auto;
     /* border-radius: 615px; */
     /* box-shadow: 50px 50px 50px black; */
 }
 
 .badge-wrapper .svg-wrapper {
-    width: 840px;
+    width: 420px;
     z-index: 1;
     position: absolute;
 }
@@ -252,16 +212,17 @@ filter: drop-shadow(-10px 26px 8px #000);
   background-color: black;
 }
 
-.showcase-wrapper .showcase-header{
-  display: block;
-  width: 1200px;
-  position: relative;
-  top: -280px;
+.showcase-wrapper .showcase-header {
+    display: block;
+    width: 660px;
+    position: relative;
+    top: -280px;
+    left: -180px;
 }
 
 .project-wrapper{
-  width: 1200px;
-  height: 1300px;
+  width: 360px;
+  height: 1200px;
   position: relative;
   background-image: url("../images/showroom-background.jpg");
   background-size: 90%;
@@ -281,13 +242,13 @@ filter: drop-shadow(-10px 26px 8px #000);
     border: 1px solid rgba(0, 255, 255, 0);
     position: relative;
     bottom: 95px;
-    width: 800px;
+    width: 300px;
     height: 400px;
     margin: 0 auto;
 }
 
 .title-wrapper h1 {
-    font-size: 321pt;
+    font-size: 200pt;
     color: rgb(3, 99, 180);
     opacity: 0.2;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -307,14 +268,14 @@ filter: drop-shadow(-10px 26px 8px #000);
 }
 
 .title-wrapper h2 {
-    width: 540px;
-    margin-left: 30px;
+    width: 340px;
+    margin-left: -42px;
 }
 
 .cloud-wrapper {
     /* border: 1px solid yellow; */
     width: 100%;
-    height: 800px;
+    height: 400px;
     position: relative;
     text-align: center;
     /* margin: 0 auto; */
@@ -322,21 +283,21 @@ filter: drop-shadow(-10px 26px 8px #000);
 
 .cloud-wrapper .back-cloud {
     display: block;
-    width: 1200px;
+    width: 360px;
     position: absolute;
     bottom: 0;
     z-index: 1;
 }
 
 .cloud-wrapper .iphone-one {
-    /*display: inline-block;*/
+    /* display: inline-block; */
     position: relative;
     z-index: 2;
-    width: 370px;
+    width: 270px;
 }
 
 .cloud-wrapper .front-cloud {
-    width: 1200px;
+    width: 360px;
     display: block;
     position: absolute;
     bottom: 0px;
