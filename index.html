@@ -26,32 +26,64 @@
 
 <div class="main-container">
   <div class="height-box">
-    <p>WELCOME TO ...</p>
-    <h5> SCROLL DOWN</h5>
-    <span>></span>
+    <p>WELCOME TO</p>
+    <h5>RODMAN CUSTOMS</h5>
+    <div class="lion-container">
+      <img class="bg-lion lion-left" src="images/lion_700x700.png" alt="lion"/>
+      <img class="header-badge" src="images/BlueLion_500x500.png" alt="lion"/>
+      <img class="bg-lion lion-right" src="images/lion_700x700.png" alt="lion"/>
+    </div>
+    <p class="intro-contact">P: 508-698-3400 C: 781-801-8212 E: mshiff@rodmanford.com F: 508-968-3480</p>
+    <a id="skip-to-end-btn" href="#footer" class="skip-to-end">
+      <span class="">SKIP TO END</span>
+      <img src="images/finish-line.svg" alt="finish line"/>
+    </a>
+    <a href="#start-line" class="to-start-line"><span>TAKE A TOUR</span></a>
   </div>
   <!-- <div class="nav-scroll-gutter"></div> -->
-  <div class="header">
-    <div class="lion-header" data-stellar-offset-parent="true">
-    <img class="lion-matte" src="images/Lion_matte_660x687.png" alt="back-row" data-stellar-ratio=".2">
-  </div>
+  <div class="header" data-stellar-offset-parent="true">
+    <div class="sky-header" data-stellar-background-ratio="0.5">
+      <h1></h1>
+    </div>
+    <div class="trees-header" data-stellar-ratio="1.5" data-stellar-vertical-offset="-450"></div>
+    <div class="dealership-header" data-stellar-ratio="1.4" data-stellar-vertical-offset="-730"></div>
+    <!-- <div class="lion-header" data-stellar-offset-parent="true">
+      <img class="lion-matte" src="images/Lion_matte_660x687.png" alt="back-row" data-stellar-ratio=".2">
+    </div>
     <div class="trucks" data-stellar-offset-parent="true">
-      <!-- <button id="headerTOroad">Click to Start</button> -->
-    <img class="back-row" src="images/header-backrow-1400x600.png" alt="back-row" data-stellar-ratio=".2" data-stellar-vertical-offset="250">
-    <img class="lights-front-row" src="images/header-frontrow-lightsScreen-1400x667.png" alt="back-row" data-stellar-ratio=".3">
-    <img class="front-row" src="images/header-frontrow-1400x700.png" alt="back-row" data-stellar-ratio=".3">
-  </div>
+      <img class="back-row" src="images/header-backrow-1400x600.png" alt="back-row" data-stellar-ratio=".2" data-stellar-vertical-offset="250">
+      <img class="lights-front-row" src="images/header-frontrow-lightsScreen-1400x667.png" alt="back-row" data-stellar-ratio=".3">
+      <img class="front-row" src="images/header-frontrow-1400x700.png" alt="back-row" data-stellar-ratio=".3">
+  </div> -->
+  <img class="we-are" src="images/map-we-are.svg" />
 </div>
 
 <div class="road-container" data-stellar-offset-parent="true">
-  <img class="car-top-shadow" src="images/road-topshadow-car-1400x505.png" alt="top-shadow"/>
-  <div class="car-wrapper" data-stellar-background-ratio=".7">
+  <img id="start-line-back" class="car-top-shadow" src="images/road-topshadow-car-1400x505.png" alt="top-shadow"/>
+  <div id="start-line" class="car-wrapper" data-stellar-background-ratio=".7">
     <!-- <img class="road-car" src="images/road-car.png" alt="road-car" data-stellar-ratio=".9"/> -->
     <!-- <img class="road-headlights-" src="images/road-carlights-1200x622.png" alt="road-headlights"/> -->
   </div>
-  <!-- <div class="badge-gradient-reveal"></div> -->
-  <div class="badge-container"> <!--NEED A BIG GRADIENT OVERLAYER -->
-  <div class="badge-wrapper power" data-stellar-offset-parent="true">
+  <a href="#power">
+    <div class="start-prep">
+      <p class="ready">
+        <!-- <img src="images/ready-bkgr.svg" alt="ready" /> -->
+        <span>READY? > </span>
+      </p>
+      <div class="start-line-btn">
+        <p class="light"></p>
+        <p class="light"></p>
+        <p class="light"></p>
+        <p class="light"></p>
+        <p class="light go"><span>GO!</span></p>
+      </div>
+  </div>
+  </a>
+
+
+  <div class="badge-container">
+  <div id="power-back"class="badge-wrapper power" data-stellar-offset-parent="true">
+    <a id="power"  href="#start-line-back"><span class="badge-btn-top"><img src="images/up-arrow.svg"/><span></a>
     <p class="background-text" data-stellar-ratio="2" data-stellar-horizontal-offset="140" data-stellar-vertical-offset="-150">PERFORMANCE</p>
     <img class="badge" src="images/badge-power-300x300.png" alt="power-badge" data-stellar-ratio="2.4"  data-stellar-horizontal-offset="160" data-stellar-vertical-offset="-150"/>
     <div class="svg-wrapper" data-stellar-ratio="2.8"  data-stellar-horizontal-offset="200" data-stellar-vertical-offset="-240">
@@ -108,11 +140,12 @@
       </g>
       </svg>
     </div>
+    <a href="#style"><span class=" badge-btn-bottom"><img class="rotate" src="images/up-arrow.svg"/><span></a>
   </div>
 
-  <div class="badge-wrapper style" data-stellar-offset-parent="true">
+  <div id="style-back" class="badge-wrapper style" data-stellar-offset-parent="true">
+    <a id="style" href="#power-back"><span class="badge-btn-top"><img src="images/up-arrow.svg"><span></a>
     <p class="background-text" data-stellar-ratio="2" data-stellar-horizontal-offset="320" data-stellar-vertical-offset="-150">AUTOBODY</p>
-    <!-- <img class="badge" src="images/badge-style-300x300.png" alt="power-badge" data-stellar-ratio="2.4"  data-stellar-horizontal-offset="380" data-stellar-vertical-offset="-1450"/> -->
     <img class="badge" src="images/badge-style-300x300.png" alt="power-badge" data-stellar-ratio="2.4"  data-stellar-horizontal-offset="380" data-stellar-vertical-offset="-150"/>
     <div class="svg-wrapper" data-stellar-ratio="2.8"  data-stellar-horizontal-offset="470" data-stellar-vertical-offset="-240">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -159,9 +192,11 @@
       </g>
       </svg>
     </div>
+    <a href="#interior"><span class=" badge-btn-bottom"><img class="rotate" src="images/up-arrow.svg"/><span></a>
   </div>
 
-  <div class="badge-wrapper interior" data-stellar-offset-parent="true">
+  <div id="interior-back" class="badge-wrapper interior" data-stellar-offset-parent="true">
+    <a id="interior" href="#style-back"><span class="badge-btn-top"><img src="images/up-arrow.svg"><span></a>
     <p class="background-text" data-stellar-ratio="2" data-stellar-horizontal-offset="140" data-stellar-vertical-offset="-150">CUSTOMIZE</p>
     <img class="badge" src="images/badge-interior-300x300.png" alt="power-badge" data-stellar-ratio="2.4"  data-stellar-horizontal-offset="160" data-stellar-vertical-offset="-150"/>
     <div class="svg-wrapper" data-stellar-ratio="2.8"  data-stellar-horizontal-offset="200" data-stellar-vertical-offset="-240">
@@ -230,14 +265,27 @@
       </g>
       </svg>
     </div>
+    <a href="#show-room"><span class=" badge-btn-bottom"><img class="rotate" src="images/up-arrow.svg"/><span></a>
   </div>
 </div>
 </div> <!--END ROAD CONTAINER -->
 
 <div class="showcase-wrapper">
-  <img class="showcase-header" src="images/Instagram-header1400x1370.png"/>
+  <div class="showcase-header">
+    <img src="images/Instagram-header1400x1370.png"/>
+    <span id="show-room-back" class="showcase-header-target">
+      <span id="show-room"></span>
+      <!-- <span id="show-room-back"></span> -->
+    </span>
+    <div class="showcase-btn-wrapper">
+      <a class="showcase-start-btn" href="#interior-back"><span style="position:relative"> BACK </span> </a>
+      <a class="showcase-start-btn" href="#car-one"><span style="position:relative"> OUR WORK </span> </a>
+    </div>
+  </div>
   <div class="project-wrapper car-one" data-stellar-offset-parent="true" > <!-- BACKGROUND IMG Flipped -->
     <img class="iphone-shadow" src="images/iphone-shadow.png" alt="shadow" data-stellar-ratio="1.4" data-stellar-horizontal-offset="-600px" data-stellar-vertical-offset="-850"/>
+    <span id="car-one"></span>
+    <span id="car-one-back"></span>
     <!-- <img class="iphone-shadow" src="images/iphone-shadow.png" alt="shadow" data-stellar-ratio="-.1" data-stellar-horizontal-offset="300" data-stellar-vertical-offset="600"/> -->
 
     <div class="title-wrapper">
@@ -352,13 +400,30 @@
     </div>
   <div class="cloud-wrapper" data-stellar-offset-parent="true" >
     <img class="back-cloud" src="images/showroom-cloudback-1200x700.png" alt="back-cloud"/>
-    <img class="iphone-one" src="images/iphone1-350x683.png" alt="iphone2" data-stellar-ratio="1.2" data-stellar-horizontal-offset="2150" data-stellar-vertical-offset="650"/>
+     <div class="iphone-one" data-stellar-ratio="1.2" data-stellar-horizontal-offset="2150" data-stellar-vertical-offset="650">
+       <!-- <div class="specs-left">
+       </div> -->
+        <img src="images/iphone1-350x683.png" alt="iphone2" />
+        <div id="car-one-specs" class="specs-right">
+            <li class="hide-list">4" LIFT KIT</li>
+            <li class="hide-list">MOTO METAL 20X10 WHEELS</li>
+            <li class="hide-list">NITTO 33X12.5 ALL TERRAIN TIRES</li>
+            <li class="hide-list">CUSTOM BLACKOUT PAINT + TINT</li>
+        </div>
+      </div>
     <img class="front-cloud" src="images/showroom-cloudfront-1200x700.png" alt="back-cloud"/>
   </div>
+    <div class="show-room-btn-wrapper">
+      <a href="#show-room-back"><p class="show-room-btn">BACK</p></a>
+      <a href="#car-two"><p class="show-room-btn">NEXT</p></a>
+    </div>
+  </div> <!-- END CAR ONE -->
 
-  </div>
+
   <div class="project-wrapper car-one" data-stellar-offset-parent="true" > <!-- BACKGROUND IMG Flipped -->
     <img class="iphone-shadow" src="images/iphone-shadow.png" alt="shadow" data-stellar-ratio="1.4" data-stellar-horizontal-offset="-600" data-stellar-vertical-offset="-850"/>
+    <span id="car-two"></span>
+    <span id="car-two-back"></span>
     <!-- <img class="iphone-shadow" src="images/iphone-shadow.png" alt="shadow" data-stellar-ratio="-.1" data-stellar-horizontal-offset="300" data-stellar-vertical-offset="600"/> -->
 
     <div class="title-wrapper">
@@ -472,13 +537,27 @@
     </div>
   <div class="cloud-wrapper" data-stellar-offset-parent="true" >
     <img class="back-cloud" src="images/showroom-cloudback-1200x700.png" alt="back-cloud"/>
-    <img class="iphone-one" src="images/iphone2-350x683.png" alt="iphone3" data-stellar-ratio="1.2" data-stellar-horizontal-offset="2150" data-stellar-vertical-offset="650"/>
+    <div class="iphone-one" data-stellar-ratio="1.2" data-stellar-horizontal-offset="2150" data-stellar-vertical-offset="650">
+       <img src="images/iphone2-350x683.png" alt="iphone2" />
+       <div id="car-two-specs" class="specs-right">
+           <li class="hide-list">SPORT TUNED ENGINE</li>
+           <li class="hide-list">FULL MAGNA FLOW EXAUST</li>
+           <li class="hide-list">CUSTOM TINT</li>
+       </div>
+     </div>
     <img class="front-cloud" src="images/showroom-cloudfront-1200x700.png" alt="back-cloud"/>
   </div>
+    <div class="show-room-btn-wrapper">
+      <a href="#car-one-back"><p class="show-room-btn">BACK</p></a>
+      <a href="#car-three"><p class="show-room-btn">NEXT</p></a>
+    </div>
+  </div> <!-- END CAR TWO -->
 
-  </div>
+
   <div class="project-wrapper car-one" data-stellar-offset-parent="true" > <!-- BACKGROUND IMG Flipped -->
     <img class="iphone-shadow" src="images/iphone-shadow.png" alt="shadow" data-stellar-ratio="1.4" data-stellar-horizontal-offset="-600" data-stellar-vertical-offset="-850"/>
+    <span id="car-three"></span>
+    <span id="car-two-back"></span>
     <!-- <img class="iphone-shadow" src="images/iphone-shadow.png" alt="shadow" data-stellar-ratio="-.1" data-stellar-horizontal-offset="300" data-stellar-vertical-offset="600"/> -->
 
     <div class="title-wrapper">
@@ -612,11 +691,25 @@
     </div>
   <div class="cloud-wrapper" data-stellar-offset-parent="true" >
     <img class="back-cloud" src="images/showroom-cloudback-1200x700.png" alt="back-cloud"/>
-    <img class="iphone-one" src="images/iphone3-350x683.png" alt="iphone1" data-stellar-ratio="1.2" data-stellar-horizontal-offset="2150" data-stellar-vertical-offset="650"/>
+    <div class="iphone-one" data-stellar-ratio="1.2" data-stellar-horizontal-offset="2150" data-stellar-vertical-offset="650">
+      <!-- <div class="specs-left">
+      </div> -->
+       <img src="images/iphone3-350x683.png" alt="iphone2" />
+       <div id="car-three-specs" class="specs-right">
+           <li class="hide-list">1 OFF WIDE BODY KIT</li>
+           <li class="hide-list">22" FORGIATO WHEELS</li>
+           <li class="hide-list">FULL MAGNA FLOW EXAUST</li>
+           <li class="hide-list">CUSTOM PEARL WHITE PAINT</li>
+       </div>
+     </div>
+    <!-- <img class="iphone-one" src="images/iphone3-350x683.png" alt="iphone1" data-stellar-ratio="1.2" data-stellar-horizontal-offset="2150" data-stellar-vertical-offset="650"/> -->
     <img class="front-cloud" src="images/showroom-cloudfront-1200x700.png" alt="back-cloud"/>
   </div>
-
+  <div class="show-room-btn-wrapper">
+    <a href="#car-two-back"><p class="show-room-btn">BACK</p></a>
+    <a href="#lion-contact"><p class="show-room-btn">NEXT</p></a>
   </div>
+</div> <!-- END CAR THREE -->
 </div> <!--END SHOW CASE WRAPPER-->
 
 
@@ -666,7 +759,7 @@
       </h3>
       <p>781-801-8212</p>
     </div>
-    <img class="logo" src="images/Lion_glossy_400x400.png" alt="glossy-lion">
+    <img id="lion-contact" class="logo" src="images/Lion_glossy_400x400.png" alt="glossy-lion">
 
     <div class="info-wrapper">
       <h3>
@@ -849,18 +942,16 @@
     </div>
   </div>
 
-  <footer>
+  <footer id="footer">
     <div class="address">
-      <p>53 Washington St. <br><br>
-        FoxborO, MA 02035 <br><br>
-        ACROSS FROM GILLETTE
-      </p>
+      <p>53 Washington St.  </p>
+      <p>Foxboro, MA 02035  </p>
+      <p>ACROSS FROM GILLETTE</p>
     </div>
     <div class="store-hours">
-      <p>Store Hours: <br><br>
-        Mon-Fri <br><br>
-        9am - 6pm
-      </p>
+      <p>Store Hours:  </p>
+      <p>Mon-Fri  </p>
+      <p>9am - 6pm </p>
     </div>
   </footer>
 </section> <!--END CONTACT CONTAINER-->
