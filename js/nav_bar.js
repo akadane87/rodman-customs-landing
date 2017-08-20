@@ -277,11 +277,11 @@ $('a[href="#show-room-back"]').on('click',function (e) {
           'scrollTop': $target.offset().top
       }, 1100, 'swing', function () {
           window.location.hash = target;
-          // window.scrollBy({
-          //   top: 500, // could be negative value
-          //   left: 0,
-          //   behavior: 'smooth'
-          // });
+          window.scrollBy({
+            top: 500, // could be negative value
+            left: 0,
+            behavior: 'smooth'
+          });
    });
   });
 ///////////////////END///////////////////
@@ -298,11 +298,11 @@ $('a[href="#car-one-back"]').on('click',function (e) {
          'scrollTop': $target.offset().top
      }, 1100, 'swing', function () {
          window.location.hash = target;
-        //  window.scrollBy({
-        //    top: 500, // could be negative value
-        //    left: 0,
-        //    behavior: 'smooth'
-        //  });
+         window.scrollBy({
+           top: 500, // could be negative value
+           left: 0,
+           behavior: 'smooth'
+         });
   });
  });
 
@@ -317,11 +317,11 @@ $('a[href="#car-one-back"]').on('click',function (e) {
           'scrollTop': $target.offset().top
       }, 1100, 'swing', function () {
           window.location.hash = target;
-          // window.scrollBy({
-          //   top: 500, // could be negative value
-          //   left: 0,
-          //   behavior: 'smooth'
-          // });
+          window.scrollBy({
+            top: 500, // could be negative value
+            left: 0,
+            behavior: 'smooth'
+          });
    });
   });
 ///////////////////END///////////////////
