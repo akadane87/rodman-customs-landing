@@ -25,7 +25,7 @@ a {
 .header {
   /*border: 1px solid yellow;*/
   width: 360px;
-  height: 2200px;
+  height: 700px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -49,9 +49,111 @@ a {
 }
 
 .height-box p {
+  /*display: none;*/
   position: relative;
-  font-family: 'Oswald' sans-serif;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  font-family: 'Open Sans';
   color: white;
+  font-weight: 300;
+  font-size: 20pt;
+  letter-spacing: 10px;
+  text-align: center;
+  /* top: 300px; */
+}
+
+.height-box h5 {
+  /* display: none; */
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(3, 99, 180);
+  font-size: 47pt;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.lion-container {
+    /* display: none; */
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 530px;
+    /* border: 1px solid white; */
+}
+
+.lion-container .bg-lion {
+    display: inline-block;
+    height: 180px;
+    margin-top: 70px;
+    opacity: 0.1;
+}
+
+.lion-container .lion-left {
+    float: left;
+}
+.lion-container .lion-right {
+    float: right;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.lion-container .header-badge {
+    position: absolute;
+    top: -240px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+    display: inline-block;
+    height: 280px;
+}
+
+.height-box .intro-contact {
+    position: absolute;
+    width: 630px;
+    right: 30px;
+    bottom: 380px;
+    color: white;
+    /* background-color: lightgreen; */
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 5px;
+    transform: rotateZ(-90deg);
+}
+
+.skip-to-end {
+    position: fixed;
+    overflow: hidden;
+    top: 330px;
+    right: 850px;
+    display: inline-block;
+    text-align: center;
+    height: 66px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    z-index: 5;
+    opacity: .4;
+    transition: box-shadow .4s, opacity .4s;
+    /* animation: pan-left 1s 2s; */
+}
+
+.height-box a.to-start-line {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    bottom: 200px;
+    width: 250px;
+    height: 60px;
+    border: 6px solid rgb(3, 99, 180);
+    z-index: 3;
+    cursor: pointer;
 }
 
 .header .lion-header{

@@ -159,11 +159,11 @@ $('a[href="#show-room"]').on('click',function (e) {
 $("#car-one-specs").inViewport(function(px){
     console.log(this.id+' '+px);
     if(px) {
-      window.scrollBy({
-        top: 10, // could be negative value
-        left: 0,
-        behavior: 'smooth'
-      });
+      // window.scrollBy({
+      //   top: 10, // could be negative value
+      //   left: 0,
+      //   behavior: 'smooth'
+      // });
       $("#car-one-specs li").removeClass("hide-list") ;
       $("#car-one-specs li").addClass("right-show") ;
     }
@@ -177,11 +177,11 @@ $("#car-one-specs").inViewport(function(px){
 $("#car-two-specs").inViewport(function(px){
     console.log(this.id+' '+px);
     if(px) {
-      window.scrollBy({
-        top: 10, // could be negative value
-        left: 0,
-        behavior: 'smooth'
-      });
+      // window.scrollBy({
+      //   top: 10, // could be negative value
+      //   left: 0,
+      //   behavior: 'smooth'
+      // });
       $("#car-two-specs li").removeClass("hide-list") ;
       $("#car-two-specs li").addClass("right-show") ;
     }
@@ -194,11 +194,11 @@ $("#car-two-specs").inViewport(function(px){
 $("#car-three-specs").inViewport(function(px){
     console.log(this.id+' '+px);
     if(px) {
-      window.scrollBy({
-        top: 10, // could be negative value
-        left: 0,
-        behavior: 'smooth'
-      });
+      // window.scrollBy({
+      //   top: 10, // could be negative value
+      //   left: 0,
+      //   behavior: 'smooth'
+      // });
       $("#car-three-specs li").removeClass("hide-list") ;
       $("#car-three-specs li").addClass("right-show") ;
     }

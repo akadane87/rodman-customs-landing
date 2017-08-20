@@ -16,7 +16,7 @@
 <link href="css/main.css" rel="stylesheet" type="text/css">
 
 <!-- LOAD MOBILE CSS -->
-<link rel="stylesheet" media="(max-width: 570px)" href="css/2mobile-570.css" />
+<link rel="stylesheet" media="(max-width: 570px)" href="css/mobile-570.css" />
 
 <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico?v=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -562,7 +562,7 @@
 
     <div class="title-wrapper">
       <h1>#1</h1>
-      <h3 id="import-rev">1ST PLACE IMPORT REVOLUTION</h3>
+      <h3>1ST PLACE IMPORT REVOLUTION</h3>
       <h2 class="showroom-svg-title">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	viewBox="0 0 400 100" enable-background="new 0 0 400 100" xml:space="preserve">
@@ -961,9 +961,6 @@
 <!-- LOAD JQUERY FIRST -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-<!-- MOBILE QUERY  -->
-<script type="text/javascript" src="js/mobile-check.js"></script>
-
 <!-- LOAD STELLAR  -->
 <script type="text/javascript" src="js/vendor/jquery.stellar.js"></script>
 
@@ -980,13 +977,11 @@
 <script type="text/javascript" src="js/home.js"></script>
 
 <script type="text/javascript">
+$(window).stellar({
+  horizontalScrolling:false,
+  hideDistantElements: false
+});
 
-if ($(window).width() > 540) {
-  $(window).stellar({
-    horizontalScrolling:false,
-    hideDistantElements: false
-  });
-};
 // $('.header .lion-header')animate({
 // 	marginBottom: '-70px',
 // 	width: '1200px'
