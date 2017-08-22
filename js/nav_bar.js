@@ -1,4 +1,5 @@
 $(document).ready(function() {
+if ($(window).width() > 540) {
 
   $('a[href="#footer"]').on('click',function (e) {
      e.preventDefault();
@@ -6,7 +7,7 @@ $(document).ready(function() {
      var target = this.hash;
      var $target = $('#footer');
 
-     $('html, body').stop().animate({
+     $('html').stop().animate({
          'scrollTop': $target.offset().top
       }, 1100, 'linear', function () {
          window.location.hash = target;
@@ -21,7 +22,7 @@ $(document).ready(function() {
      var target = this.hash;
      var $target = $('#start-line');
 
-     $('html, body').stop().animate({
+     $('html').stop().animate({
          'scrollTop': $target.offset().top
       }, 7000, 'linear', function () {
          window.location.hash = target;
@@ -37,7 +38,7 @@ $(document).ready(function() {
        var target = this.hash;
        var $target = $('#power');
 
-       $('html, body').stop().animate({
+       $('html').stop().animate({
            'scrollTop': $target.offset().top
        }, 1100, 'swing', function () {
            window.location.hash = target;
@@ -54,7 +55,7 @@ $(document).ready(function() {
        var target = this.hash;
        var $target = $('#start-line-back');
 
-       $('html, body').stop().animate({
+       $('html').stop().animate({
            'scrollTop': $target.offset().top
        }, 1100, 'swing', function () {
            window.location.hash = target;
@@ -68,7 +69,7 @@ $('a[href="#style"]').on('click',function (e) {
      var target = this.hash;
      var $target = $('#style');
 
-     $('html, body').stop().animate({
+     $('html').stop().animate({
          'scrollTop': $target.offset().top
      }, 1100, 'swing', function () {
          window.location.hash = target;
@@ -85,7 +86,7 @@ $('a[href="#style"]').on('click',function (e) {
        var target = this.hash;
        var $target = $('#power-back');
 
-       $('html, body').stop().animate({
+       $('html').stop().animate({
            'scrollTop': $target.offset().top
        }, 1100, 'swing', function () {
            window.location.hash = target;
@@ -99,7 +100,7 @@ $('a[href="#interior"]').on('click',function (e) {
      var target = this.hash;
      var $target = $('#interior');
 
-     $('html, body').stop().animate({
+     $('html').stop().animate({
          'scrollTop': $target.offset().top
      }, 1100, 'swing', function () {
          window.location.hash = target;
@@ -116,7 +117,7 @@ $('a[href="#interior"]').on('click',function (e) {
        var target = this.hash;
        var $target = $('#style-back');
 
-       $('html, body').stop().animate({
+       $('html').stop().animate({
            'scrollTop': $target.offset().top
        }, 1100, 'swing', function () {
            window.location.hash = target;
@@ -131,7 +132,7 @@ $('a[href="#show-room"]').on('click',function (e) {
      var target = this.hash;
      var $target = $('#show-room');
 
-     $('html, body').stop().animate({
+     $('html').stop().animate({
          'scrollTop': $target.offset().top
      }, 1100, 'swing', function () {
          window.location.hash = target;
@@ -230,7 +231,7 @@ $('a[href="#interior-back"]').on('click',function (e) {
      var target = this.hash;
      var $target = $('#interior-back');
 
-     $('html, body').stop().animate({
+     $('html').stop().animate({
          'scrollTop': $target.offset().top
      }, 1100, 'swing', function () {
          window.location.hash = target;
@@ -244,10 +245,15 @@ $('a[href="#interior-back"]').on('click',function (e) {
       var target = this.hash;
       var $target = $('#car-one');
 
-      $('html, body').stop().animate({
+      $('html').stop().animate({
           'scrollTop': $target.offset().top
       }, 1100, 'swing', function () {
           window.location.hash = target;
+          window.scrollBy({
+            top: 500, // could be negative value
+            left: 0,
+            behavior: 'smooth'
+          });
    });
   });
 
@@ -259,7 +265,7 @@ $('a[href="#show-room-back"]').on('click',function (e) {
      var target = this.hash;
      var $target = $('#show-room-back');
 
-     $('html, body').stop().animate({
+     $('html').stop().animate({
          'scrollTop': $target.offset().top
      }, 1100, 'swing', function () {
          window.location.hash = target;
@@ -273,7 +279,8 @@ $('a[href="#show-room-back"]').on('click',function (e) {
       var target = this.hash;
       var $target = $('#car-two');
 
-      $('html, body').stop().animate({
+      // $('html').stop().animate({
+        $('html').stop().animate({
           'scrollTop': $target.offset().top
       }, 1100, 'swing', function () {
           window.location.hash = target;
@@ -294,7 +301,7 @@ $('a[href="#car-one-back"]').on('click',function (e) {
      var target = this.hash;
      var $target = $('#car-one-back');
 
-     $('html, body').stop().animate({
+     $('html').animate({
          'scrollTop': $target.offset().top
      }, 1100, 'swing', function () {
          window.location.hash = target;
@@ -313,7 +320,7 @@ $('a[href="#car-one-back"]').on('click',function (e) {
       var target = this.hash;
       var $target = $('#car-three');
 
-      $('html, body').stop().animate({
+      $('html').stop().animate({
           'scrollTop': $target.offset().top
       }, 1100, 'swing', function () {
           window.location.hash = target;
@@ -335,7 +342,7 @@ $('a[href="#car-two-back"]').on('click',function (e) {
      var target = this.hash;
      var $target = $('#car-two-back');
 
-     $('html, body').stop().animate({
+     $('html').stop().animate({
          'scrollTop': $target.offset().top
      }, 1100, 'swing', function () {
          window.location.hash = target;
@@ -349,12 +356,12 @@ $('a[href="#car-two-back"]').on('click',function (e) {
       var target = this.hash;
       var $target = $('#lion-contact');
 
-      $('html, body').stop().animate({
+      $('html').stop().animate({
           'scrollTop': $target.offset().top
       }, 1100, 'swing', function () {
           window.location.hash = target;
    });
   });
 ///////////////////END///////////////////
-
+}
 });

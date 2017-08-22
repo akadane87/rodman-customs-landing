@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
   background-color: black;
 }
@@ -268,12 +273,12 @@ a {
 .height-box a.to-start-line span:before {
   content: '';
   position: absolute;
-  top: -2px;
+  top: -4px;
   right: -530px;
   bottom: 0;
   /*left: 0;*/
-  width: 275px;
-  height: 90px;
+  width: 295px;
+  height: 190px;
   background-color: rgb(3, 99, 180);
   z-index: -1;
   transform: skewX(-15deg) rotateX(15deg);
@@ -283,7 +288,7 @@ a {
 }
 
 a.to-start-line:hover span:before {
-  right: -12px;
+  right: -3px;
 }
 
 
@@ -384,7 +389,7 @@ a.to-start-line:hover span:before {
 }
 
 .start-prep:hover .start-line-btn{
-  width: 65%;
+  width: 68%;
 }
 
 .ready{
@@ -1039,7 +1044,7 @@ a.showcase-start-btn:before {
 }
 
 .social-media p {
-    width: 300px;
+    width: 305px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 3px;
     font-size: 11pt;
