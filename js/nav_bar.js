@@ -1,4 +1,89 @@
 $(document).ready(function() {
+
+  //////////////////// IN VIEWPORT FUNCTION///////////////////////
+  ;(function($, win) {
+    $.fn.inViewport = function(cb) {
+       return this.each(function(i,el){
+         function visPx(){
+           var H = $(this).height(),
+               r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+           return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));
+         } visPx();
+         $(win).on("resize scroll", visPx);
+       });
+    };
+  }(jQuery, window));
+
+
+
+  $("#car-one-specs").inViewport(function(px){
+      console.log(this.id+' '+px);
+      if(px) {
+        // window.scrollBy({
+        //   top: 10, // could be negative value
+        //   left: 0,
+        //   behavior: 'smooth'
+        // });
+        $("#car-one-specs li").removeClass("hide-list") ;
+        $("#car-one-specs li").addClass("right-show") ;
+      }
+      else {
+        $("#car-one-specs li").addClass("hide-list") ;
+        $("#car-one-specs li").removeClass("right-show") ;
+      }
+  });
+
+
+  $("#car-two-specs").inViewport(function(px){
+      console.log(this.id+' '+px);
+      if(px) {
+        // window.scrollBy({
+        //   top: 10, // could be negative value
+        //   left: 0,
+        //   behavior: 'smooth'
+        // });
+        $("#car-two-specs li").removeClass("hide-list") ;
+        $("#car-two-specs li").addClass("right-show") ;
+      }
+      else {
+        $("#car-two-specs li").addClass("hide-list") ;
+        $("#car-two-specs li").removeClass("right-show") ;
+      }
+  });
+
+  $("#car-three-specs").inViewport(function(px){
+      console.log(this.id+' '+px);
+      if(px) {
+        // window.scrollBy({
+        //   top: 10, // could be negative value
+        //   left: 0,
+        //   behavior: 'smooth'
+        // });
+        $("#car-three-specs li").removeClass("hide-list") ;
+        $("#car-three-specs li").addClass("right-show") ;
+      }
+      else {
+        $("#car-three-specs li").addClass("hide-list") ;
+        $("#car-three-specs li").removeClass("right-show") ;
+      }
+  });
+
+  $("#footer").inViewport(function(px){
+      console.log(this.id+' '+px);
+      if(px) {
+        $("#skip-to-end-btn").removeClass("skip-to-end") ;
+        $("#skip-to-end-btn").addClass("skip-to-end-hide") ;
+      }
+      // else {
+      //   $("#skip-to-end-btn").addClass("skip-to-end-hide") ;
+      //   $("#skip-to-end-btn").removeClass("skip-to-end") ;
+      // }
+  });
+
+  ///////////////////// END /////////////////////
+
+
+
 if ($(window).width() > 540) {
 
   $('a[href="#footer"]').on('click',function (e) {
@@ -141,87 +226,7 @@ $('a[href="#show-room"]').on('click',function (e) {
 ///////////////////END///////////////////
 
 
-//////////////////// IN VIEWPORT FUNCTION///////////////////////
-;(function($, win) {
-  $.fn.inViewport = function(cb) {
-     return this.each(function(i,el){
-       function visPx(){
-         var H = $(this).height(),
-             r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
-         return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));
-       } visPx();
-       $(win).on("resize scroll", visPx);
-     });
-  };
-}(jQuery, window));
 
-
-
-$("#car-one-specs").inViewport(function(px){
-    console.log(this.id+' '+px);
-    if(px) {
-      // window.scrollBy({
-      //   top: 10, // could be negative value
-      //   left: 0,
-      //   behavior: 'smooth'
-      // });
-      $("#car-one-specs li").removeClass("hide-list") ;
-      $("#car-one-specs li").addClass("right-show") ;
-    }
-    else {
-      $("#car-one-specs li").addClass("hide-list") ;
-      $("#car-one-specs li").removeClass("right-show") ;
-    }
-});
-
-
-$("#car-two-specs").inViewport(function(px){
-    console.log(this.id+' '+px);
-    if(px) {
-      // window.scrollBy({
-      //   top: 10, // could be negative value
-      //   left: 0,
-      //   behavior: 'smooth'
-      // });
-      $("#car-two-specs li").removeClass("hide-list") ;
-      $("#car-two-specs li").addClass("right-show") ;
-    }
-    else {
-      $("#car-two-specs li").addClass("hide-list") ;
-      $("#car-two-specs li").removeClass("right-show") ;
-    }
-});
-
-$("#car-three-specs").inViewport(function(px){
-    console.log(this.id+' '+px);
-    if(px) {
-      // window.scrollBy({
-      //   top: 10, // could be negative value
-      //   left: 0,
-      //   behavior: 'smooth'
-      // });
-      $("#car-three-specs li").removeClass("hide-list") ;
-      $("#car-three-specs li").addClass("right-show") ;
-    }
-    else {
-      $("#car-three-specs li").addClass("hide-list") ;
-      $("#car-three-specs li").removeClass("right-show") ;
-    }
-});
-
-$("#footer").inViewport(function(px){
-    console.log(this.id+' '+px);
-    if(px) {
-      $("#skip-to-end-btn").removeClass("skip-to-end") ;
-      $("#skip-to-end-btn").addClass("skip-to-end-hide") ;
-    }
-    // else {
-    //   $("#skip-to-end-btn").addClass("skip-to-end-hide") ;
-    //   $("#skip-to-end-btn").removeClass("skip-to-end") ;
-    // }
-});
-
-///////////////////// END /////////////////////
 
 /////////////////  SHOWROOM START  /////////////////
 // Show-Room --> Interior /// Back button
